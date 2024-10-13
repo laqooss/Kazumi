@@ -125,7 +125,7 @@ class _InfoPageState extends State<InfoPage>
                                       color: infoController.pluginSearchStatus[
                                                   plugin.name] ==
                                               'success'
-                                          ? Colors.green
+                                          ? Colors.red
                                           : (infoController.pluginSearchStatus[
                                                       plugin.name] ==
                                                   'pending')
