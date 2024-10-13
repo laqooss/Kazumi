@@ -187,9 +187,33 @@ class _InfoPageState extends State<InfoPage>
                   )
                 ],
               ),
-              // Removed FloatingActionButton
-            ),
-          ),
+              floatingActionButton: FloatingActionButton(
+                onPressed: () {
+                  int currentIndex = tabController.index;
+                  SmartDialog.show(
+                      useAnimation: false,
+                      builder: (context) {
+                        return AlertDialog(
+                          title: const Text('退出确认'),
+                          content: const Text('您想要离开 Kazumi 并在浏览器中打开此视频源吗？'),
+                          actions: [
+                            TextButton(
+                                onPressed: () {
+                                  SmartDialog.dismiss();
+                                  launchUrl(Uri.parse(pluginsController
+                                      .pluginList[currentIndex].baseUrl));
+                                },
+                                child: const Text('确认')),
+                            const TextButton(
+                                onPressed: SmartDialog.dismiss,
+                                child: Text('取消')),
+                          ],
+                        );
+                      });
+                  // print('Current Tab Index: $currentIndex');
+                },
+                child: const Icon(Icons.open_in_browser),
+              )),
         ],
       ),
     );
