@@ -139,7 +139,7 @@ class _AppWidgetState extends State<AppWidget>
     dynamic defaultThemeColor =
         setting.get(SettingBoxKey.themeColor, defaultValue: 'default');
     if (defaultThemeColor == 'default') {
-      color = Colors.green;
+      color = Colors.red;
     } else {
       color = Color(int.parse(defaultThemeColor, radix: 16));
     }
