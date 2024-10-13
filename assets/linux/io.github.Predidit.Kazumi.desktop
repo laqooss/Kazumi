@@ -2,8 +2,8 @@
 Name=LaQoo
 Comment=Watch Animes online with danmaku support.
 Comment[zh_CN]=一款好用的聚合追番软件
-Exec=LaQoo
-Icon=io.github.laqooss.laqoo
+Exec=laqoo
+Icon=io.github.laqooss.LaQoo
 Terminal=false
 Type=Application
 Categories=AudioVideo;Audio;Video;
