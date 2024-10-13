@@ -74,14 +74,14 @@ class _ThemeSettingsPageState extends State<ThemeSettingsPage> {
     var defaultDarkTheme = ThemeData(
       useMaterial3: true,
       brightness: Brightness.dark,
-      colorSchemeSeed: Colors.green,
+      colorSchemeSeed: Colors.red,
     );
     var oledDarkTheme = Utils.oledDarkTheme(defaultDarkTheme);
     AdaptiveTheme.of(context).setTheme(
       light: ThemeData(
         useMaterial3: true,
         brightness: Brightness.light,
-        colorSchemeSeed: Colors.green,
+        colorSchemeSeed: Colors.red,
       ),
       dark: oledEnhance ? oledDarkTheme : defaultDarkTheme,
     );
@@ -109,7 +109,7 @@ class _ThemeSettingsPageState extends State<ThemeSettingsPage> {
     dynamic color;
     oledEnhance = setting.get(SettingBoxKey.oledEnhance, defaultValue: false);
     if (defaultThemeColor == 'default') {
-      color = Colors.green;
+      color = Colors.red;
     } else {
       color = Color(int.parse(defaultThemeColor, radix: 16));
     }
