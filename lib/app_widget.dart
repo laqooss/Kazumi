@@ -158,7 +158,7 @@ class _AppWidgetState extends State<AppWidget>
       dark: oledEnhance ? oledDarkTheme : defaultDarkTheme,
       initial: AdaptiveThemeMode.system,
       builder: (theme, darkTheme) => MaterialApp.router(
-        title: "Kazumi",
+        title: "LaQoo",
         localizationsDelegates: GlobalMaterialLocalizations.delegates,
         supportedLocales: const [
           Locale.fromSubtags(
