@@ -138,24 +138,13 @@ class _AboutPageState extends State<AboutPage> {
         body: Column(
           children: [
             ListTile(
-              title: const Text('开源许可证'),
-              subtitle: Text('查看所有开源许可证',
-                  style: Theme.of(context)
-                      .textTheme
-                      .labelMedium!
-                      .copyWith(color: Theme.of(context).colorScheme.outline)),
-              onTap: () {
-                Modular.to.pushNamed('/tab/my/about/license');
-              },
-            ),
-            ListTile(
               onTap: () {
                 launchUrl(Uri.parse(Api.sourceUrl),
                     mode: LaunchMode.externalApplication);
               },
               dense: false,
-              title: const Text('项目主页'),
-              trailing: Text('Github',
+              title: const Text('关于LaQoo'),
+              trailing: Text('abort',
                   style: Theme.of(context)
                       .textTheme
                       .labelMedium!
@@ -167,8 +156,8 @@ class _AboutPageState extends State<AboutPage> {
                     mode: LaunchMode.externalApplication);
               },
               dense: false,
-              title: const Text('图标创作'),
-              trailing: Text('Pixiv',
+              title: const Text('更新页面'),
+              trailing: Text('update',
                   style: Theme.of(context)
                       .textTheme
                       .labelMedium!
@@ -180,8 +169,8 @@ class _AboutPageState extends State<AboutPage> {
                     mode: LaunchMode.externalApplication);
               },
               dense: false,
-              title: const Text('番剧索引'),
-              trailing: Text('Bangumi',
+              title: const Text('为爱发电'),
+              trailing: Text('LaQoo',
                   style: Theme.of(context)
                       .textTheme
                       .labelMedium!
