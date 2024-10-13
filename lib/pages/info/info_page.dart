@@ -80,8 +80,8 @@ class _InfoPageState extends State<InfoPage>
                   child: LayoutBuilder(builder: (context, boxConstraints) {
                     return NetworkImgLayer(
                       src: infoController.bangumiItem.images['large'] ?? '',
-                      width: boxConstraints.maxWidth,
-                      height: boxConstraints.maxHeight,
+                      width: 0,
+                      height: 0,
                       fadeInDuration: const Duration(milliseconds: 0),
                       fadeOutDuration: const Duration(milliseconds: 0),
                     );
@@ -187,33 +187,9 @@ class _InfoPageState extends State<InfoPage>
                   )
                 ],
               ),
-              floatingActionButton: FloatingActionButton(
-                onPressed: () {
-                  int currentIndex = tabController.index;
-                  SmartDialog.show(
-                      useAnimation: false,
-                      builder: (context) {
-                        return AlertDialog(
-                          title: const Text('退出确认'),
-                          content: const Text('您想要离开 Kazumi 并在浏览器中打开此视频源吗？'),
-                          actions: [
-                            TextButton(
-                                onPressed: () {
-                                  SmartDialog.dismiss();
-                                  launchUrl(Uri.parse(pluginsController
-                                      .pluginList[currentIndex].baseUrl));
-                                },
-                                child: const Text('确认')),
-                            const TextButton(
-                                onPressed: SmartDialog.dismiss,
-                                child: Text('取消')),
-                          ],
-                        );
-                      });
-                  // print('Current Tab Index: $currentIndex');
-                },
-                child: const Icon(Icons.open_in_browser),
-              )),
+              // Removed FloatingActionButton
+            ),
+          ),
         ],
       ),
     );
