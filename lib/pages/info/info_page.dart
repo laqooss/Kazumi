@@ -76,12 +76,12 @@ class _InfoPageState extends State<InfoPage>
                     ? Colors.white
                     : Colors.black,
                 child: Opacity(
-                  opacity: 0.2,
+                  opacity: 1,
                   child: LayoutBuilder(builder: (context, boxConstraints) {
                     return NetworkImgLayer(
                       src: infoController.bangumiItem.images['large'] ?? '',
-                      width: 0,
-                      height: 0,
+                      width: boxConstraints.maxWidth,
+                      height: boxConstraints.maxHeight,
                       fadeInDuration: const Duration(milliseconds: 0),
                       fadeOutDuration: const Duration(milliseconds: 0),
                     );
