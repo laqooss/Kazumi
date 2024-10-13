@@ -144,7 +144,7 @@ class _AboutPageState extends State<AboutPage> {
               },
               dense: false,
               title: const Text('关于LaQoo'),
-              trailing: Text('abort',
+              trailing: Text('Abort',
                   style: Theme.of(context)
                       .textTheme
                       .labelMedium!
@@ -157,7 +157,7 @@ class _AboutPageState extends State<AboutPage> {
               },
               dense: false,
               title: const Text('更新页面'),
-              trailing: Text('update',
+              trailing: Text('Update',
                   style: Theme.of(context)
                       .textTheme
                       .labelMedium!
