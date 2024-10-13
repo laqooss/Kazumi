@@ -210,7 +210,7 @@
               EOF
 
               cp ../assets/linux/io.github.laqooss.LaQoo.desktop usr/share/applications
-              cp ../assets/images/logo/logo_linux.png usr/share/icons/hicolor/512x512/apps/io.github.Predidit.LaQoo.png
+              cp ../assets/images/logo/logo_linux.png usr/share/icons/hicolor/512x512/apps/io.github.laqooss.LaQoo.png
 
               cd ..
               dpkg-deb --build --root-owner-group LaQoo_linux_canary_amd64
