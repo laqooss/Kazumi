@@ -4,7 +4,7 @@ class Api {
   // 规则API级别
   static const int apiLevel = 3;
   // 关于LaQoo
-  static const String sourceUrl = "https://app.laqoo.eu.org/abort";
+  static const String sourceUrl = "github.com/repos/laqooss/Kazumi";
   // 更新页面
   static const String iconUrl = "https://app.laqoo.eu.org";
   // 规则仓库
