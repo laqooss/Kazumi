@@ -18,7 +18,7 @@ class RemotePlay {
   // 而对于 iOS / Mac 设备，由于没有设备，无法进行开发与验证。
   // 可行的 iOS / Mac 处理代码，请参见 ios/Runner/AppDelegate.swift 的注释部分。
 
-  static const platform = MethodChannel('com.predidit.kazumi/intent');
+  static const platform = MethodChannel('com.laqoo.anime/intent');
 
   castVideo(BuildContext context) async {
     final searcher = DLNAManager();
