@@ -1,0 +1,17 @@
+{
+    "api": "1",
+    "type": "anime",
+    "name": "1ANI",
+    "version": "1.2",
+    "muliSources": true,
+    "useWebview": true,
+    "useNativePlayer": true,
+    "userAgent": "",
+    "baseURL": "https://acg.d1dm.top/",
+    "searchURL":"https://acg.d1dm.top/vodsearch/-------------.html?wd=@keyword",
+    "searchList": "//div/div[3]/div/div/div[1]",
+    "searchName": "//div[2]/div[1]/h3/a",
+    "searchResult": "//div[2]/div[1]/h3/a",
+    "chapterRoads": "//div/div[3]/div[2]/div[3]/div",
+    "chapterResult": "//a"
+}
