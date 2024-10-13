@@ -471,7 +471,7 @@ class Utils {
   /// 判断是否分屏模式 (android only)
   static Future<bool> isInMultiWindowMode() async {
     if (Platform.isAndroid) {
-      const platform = MethodChannel('com.predidit.kazumi/intent');
+      const platform = MethodChannel('com.laqoo.anime/intent');
       try {
         final bool result =
             await platform.invokeMethod('checkIfInMultiWindowMode');
@@ -486,7 +486,7 @@ class Utils {
 
   static enterWindowsFullscreen() async {
     if (Platform.isWindows) {
-      const platform = MethodChannel('com.predidit.kazumi/intent');
+      const platform = MethodChannel('com.laqoo.anime/intent');
       try {
         await platform.invokeMethod('enterFullscreen');
       } on PlatformException catch (e) {
@@ -497,7 +497,7 @@ class Utils {
 
   static exitWindowsFullscreen() async {
     if (Platform.isWindows) {
-      const platform = MethodChannel('com.predidit.kazumi/intent');
+      const platform = MethodChannel('com.laqoo.anime/intent');
       try {
         await platform.invokeMethod('exitFullscreen');
       } on PlatformException catch (e) {
