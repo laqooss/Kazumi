@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 final List<Map<String, dynamic>> colorThemeTypes = [
-  {'color': Colors.green, 'label': '默认'},
+  {'color': Colors.red, 'label': '默认'},
   {'color': Colors.lightGreen, 'label': '浅绿色'},
   {'color': Colors.teal, 'label': '青色'},
   {'color': Colors.cyan, 'label': '蓝绿色'},
@@ -11,7 +11,7 @@ final List<Map<String, dynamic>> colorThemeTypes = [
   {'color': Colors.purple, 'label': '紫色'},
   {'color': Colors.deepPurple, 'label': '深紫色'},
   {'color': Colors.pink, 'label': '粉红色'},
-  {'color': Colors.red, 'label': '红色'},
+  {'color': Colors.green, 'label': '绿色'},
   {'color': Colors.orange, 'label': '橙色'},
   {'color': Colors.amber, 'label': '琥珀色'},
   {'color': Colors.yellow, 'label': '黄色'},
