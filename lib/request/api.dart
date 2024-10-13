@@ -3,21 +3,21 @@ class Api {
   static const String version = '1.3.6';
   // 规则API级别
   static const int apiLevel = 3;
-  // 项目主页
-  static const String sourceUrl = "https://github.com/Predidit/Kazumi";
-  // 图标作者
-  static const String iconUrl = "https://www.pixiv.net/users/66219277";
+  // 关于LaQoo
+  static const String sourceUrl = "https://app.laqoo.eu.org/abort";
+  // 更新页面
+  static const String iconUrl = "https://app.laqoo.eu.org";
   // 规则仓库
   static const String pluginShop = 'https://raw.githubusercontent.com/Predidit/KazumiRules/main/';
   // 在线升级
   static const String latestApp =
-      'https://api.github.com/repos/Predidit/Kazumi/releases/latest'; 
+      'https://api.github.com/repos/laqooss/Kazumi/releases/latest'; 
   // Github镜像
   static const String gitMirror = 'https://mirror.ghproxy.com/';
   // 每日放送
   static const String bangumiCalendar = 'https://api.bgm.tv/calendar';
-  // Bangumi 主页
-  static const String bangumiIndex = 'https://bangumi.tv/';
+  // 为爱发电
+  static const String bangumiIndex = 'https://afdian.com/a/laqoo';
   // 番剧检索 (弃用)
   static const String bangumiSearch = 'https://api.bgm.tv/search/subject/';
   // 条目搜索
