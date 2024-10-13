@@ -54,7 +54,7 @@ class _FavoritePageState extends State<FavoritePage> {
             appBar: const SysAppBar(title: Text('追番')),
             body: favoriteController.favorites.isEmpty
                 ? const Center(
-                    child: Text('啊咧（⊙.⊙） 没有追番的说'),
+                    child: Text('呃（⊙.⊙） 你还没有追番呢'),
                   )
                 : CustomScrollView(
                     slivers: [
