@@ -175,8 +175,8 @@
                        libwebkit2gtk-4.1-0
               EOF
 
-              cp ../assets/linux/io.github.Predidit.LaQoo.desktop usr/share/applications
-              cp ../assets/images/logo/logo_linux.png usr/share/icons/hicolor/512x512/apps/io.github.Predidit.LaQoo.png
+              cp ../assets/linux/io.github.laqooss.LaQoo.desktop usr/share/applications
+              cp ../assets/images/logo/logo_linux.png usr/share/icons/hicolor/512x512/apps/io.github.laqooss.LaQoo.png
 
               cd ..
               dpkg-deb --build --root-owner-group LaQoo_linux_${{ env.tag }}_amd64
@@ -331,6 +331,7 @@
               releaseDirectory: build/unsigned
               signingKeyBase64: ${{ secrets.SIGNING_KEY_BASE64 }}
               alias: ${{ secrets.KEY_ALIAS }}
+              keyPassword: ${{ secrets.KEY_PASSWORD }}
               keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
             env:
               BUILD_TOOLS_VERSION: "34.0.0"
