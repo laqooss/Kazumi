@@ -58,13 +58,6 @@ class _MyPageState extends State<MyPage> {
             ),
             ListTile(
               onTap: () async {
-                Modular.to.pushNamed('/tab/my/plugin');
-              },
-              dense: false,
-              title: const Text('规则管理'),
-            ),
-            ListTile(
-              onTap: () async {
                 Modular.to.pushNamed('/tab/my/player');
               },
               dense: false,
