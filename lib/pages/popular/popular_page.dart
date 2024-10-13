@@ -314,10 +314,11 @@ class _PopularPageState extends State<PopularPage>
 
   Widget tagFilter() {
     List<String> tags = [
-      '日常',
-      '原创',
       '校园',
       '搞笑',
+      '治愈',
+      '日常',
+      '原创',
       '奇幻',
       '百合',
       '异世界',
@@ -328,7 +329,6 @@ class _PopularPageState extends State<PopularPage>
       '机战',
       '轻改',
       '偶像',
-      '治愈',
     ];
     return Row(
       children: <Widget>[
