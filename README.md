@@ -13,7 +13,7 @@
 
 通过本页面 [release](https://github.com/laqooss/Kazumi/releases) 选项卡下载。
 
-<a href="https://github.com/Predidit/Kazumi/releases">
+<a href="https://github.com/laqooss/Kazumi/releases">
   <img src="static/svg/get_it_on_github.svg" alt="Get it on Github" width="200"/>
 </a>
 
