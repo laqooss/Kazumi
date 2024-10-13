@@ -55,15 +55,6 @@ class _OtherSettingsPageState extends State<OtherSettingsPage> {
           children: [
             InkWell(
               child: SetSwitchItem(
-                title: 'Github镜像',
-                subTitle: '使用镜像访问规则托管仓库',
-                setKey: SettingBoxKey.enableGitProxy,
-                needReboot: true,
-                defaultVal: false,
-              ),
-            ),
-            InkWell(
-              child: SetSwitchItem(
                 title: '隐身模式',
                 subTitle: '不保留观看记录',
                 setKey: SettingBoxKey.privateMode,
