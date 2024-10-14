@@ -75,7 +75,7 @@ class _InfoPageState extends State<InfoPage>
                     ? Colors.white
                     : Colors.black,
                 child: Opacity(
-                  opacity: 0,
+                  opacity: 1,
                   child: LayoutBuilder(builder: (context, boxConstraints) {
                     return NetworkImgLayer(
                       src: infoController.bangumiItem.images['large'] ?? '',
