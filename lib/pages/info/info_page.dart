@@ -182,7 +182,7 @@ class _InfoPageState extends State<InfoPage>
                       builder: (context) {
                         return AlertDialog(
                           title: const Text('退出确认'),
-                          content: const Text('您想要离开 LaQoo 并在浏览器中打开此视频源吗？'),
+                          content: const Text('您想要离开 LaQoo 并在浏览器中打开此动漫源吗？'),
                           actions: [
                             TextButton(
                                 onPressed: () {

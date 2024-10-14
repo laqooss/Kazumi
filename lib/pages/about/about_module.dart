@@ -16,7 +16,7 @@ class AboutModule extends Module {
     r.child("/logs", child: (_) => const LogsPage());
     r.child("/license",
         child: (_) => const LicensePage(
-              applicationName: 'LaQoo 基于Kazumi',
+              applicationName: 'LaQoo 基于 Kazumi',
               applicationVersion: Api.version,
               applicationLegalese: '开源许可证',
             ),

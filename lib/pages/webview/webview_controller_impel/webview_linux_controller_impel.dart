@@ -49,7 +49,7 @@ class WebviewLinuxItemControllerImpel extends WebviewItemController<Webview> {
             isIframeLoaded = true;
             videoPageController.logLines.clear();
             videoPageController.logLines.add('解析视频资源超时');
-            videoPageController.logLines.add('请切换到其他播放列表或视频源');
+            videoPageController.logLines.add('请切换到其他播放列表或动漫源');
             videoPageController.showDebugLog = true;
           } else {
             if (!videoPageController.currentPlugin.useLegacyParser) {
