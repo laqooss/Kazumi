@@ -1,4 +1,4 @@
-﻿// This file is a part of media_kit
+// This file is a part of media_kit
 // (https://github.com/media-kit/media-kit).
 //
 // Copyright © 2021 & onwards, Hitesh Kumar Saini <saini123hitesh@gmail.com>.
@@ -79,4 +79,3 @@ void FullscreenUtils::ExitNativeFullscreen(HWND window) {
 bool FullscreenUtils::fullscreen_ = false;
 
 RECT FullscreenUtils::rect_before_fullscreen_ = RECT{};
-

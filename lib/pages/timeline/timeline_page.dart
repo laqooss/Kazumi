@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:laqoo/pages/menu/menu.dart';
@@ -263,7 +263,4 @@ class _TimelinePageState extends State<TimelinePage>
     }
     return gridViewList;
   }
-}
-
-}
 }

@@ -1,4 +1,4 @@
-﻿import 'package:logger/logger.dart';
+import 'package:logger/logger.dart';
 import 'package:laqoo/utils/logger.dart';
 import 'package:laqoo/utils/constans.dart';
 import 'package:dio/dio.dart';
@@ -181,9 +181,5 @@ class BangumiHTTP {
           .log(Level.error, 'Resolve bangumi summary failed ${e.toString()}');
       return '';
     }
-  }
-}
-
-}
   }
 }

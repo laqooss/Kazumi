@@ -1,4 +1,4 @@
-﻿class Rating {
+class Rating {
   int total;
   RatingCount count;
   double score;

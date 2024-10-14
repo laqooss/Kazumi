@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:laqoo/utils/constans.dart';
 import 'package:laqoo/utils/utils.dart';
 import 'package:laqoo/modules/bangumi/bangumi_item.dart';
@@ -176,4 +176,3 @@ class _BangumiInfoCardVState extends State<BangumiInfoCardV> {
     );
   }
 }
-

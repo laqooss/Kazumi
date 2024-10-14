@@ -1,4 +1,4 @@
-﻿import 'package:flutter_modular/flutter_modular.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 import 'package:laqoo/pages/popular/popular_module.dart';
 import 'package:laqoo/pages/my/my_module.dart';
 import 'package:laqoo/pages/timeline/timeline_module.dart';
@@ -52,4 +52,3 @@ final MenuRoute menu = MenuRoute([
     module: MyModule(),
   ),
 ]);
-

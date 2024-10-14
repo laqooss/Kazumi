@@ -1,4 +1,4 @@
-﻿import 'package:laqoo/pages/settings/danmaku/danmaku_module.dart';
+import 'package:laqoo/pages/settings/danmaku/danmaku_module.dart';
 import 'package:laqoo/pages/my/my_page.dart';
 import 'package:laqoo/pages/about/about_module.dart';
 import 'package:laqoo/pages/plugin_editor/plugin_module.dart';
@@ -26,7 +26,4 @@ class MyModule extends Module {
     r.module("/history", module: HistoryModule(), transition: TransitionType.noTransition);
     r.module("/danmaku", module: DanmakuModule(), transition: TransitionType.noTransition);
   }
-}
-
- }
 }

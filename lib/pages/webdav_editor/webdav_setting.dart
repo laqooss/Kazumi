@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:laqoo/utils/utils.dart';
 import 'package:laqoo/bean/settings/settings.dart';
@@ -160,6 +160,4 @@ class _PlayerSettingsPageState extends State<WebDavSettingsPage> {
       ),
     );
   }
-}
-
 }

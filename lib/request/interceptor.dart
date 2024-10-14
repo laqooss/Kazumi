@@ -1,4 +1,4 @@
-﻿import 'package:dio/dio.dart';
+import 'package:dio/dio.dart';
 import 'package:laqoo/request/api.dart';
 import 'package:hive/hive.dart';
 import 'package:laqoo/utils/storage.dart';
@@ -81,4 +81,3 @@ class ApiInterceptor extends Interceptor {
     return '';
   }
 }
-

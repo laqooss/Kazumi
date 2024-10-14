@@ -1,4 +1,4 @@
-﻿import 'package:dio/dio.dart';
+import 'package:dio/dio.dart';
 import 'package:laqoo/modules/search/plugin_search_module.dart';
 import 'package:laqoo/modules/roads/road_module.dart';
 import 'package:laqoo/request/request.dart';
@@ -201,4 +201,3 @@ class Plugin {
     return roadList;
   }
 }
-

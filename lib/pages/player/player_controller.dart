@@ -1,4 +1,4 @@
-﻿import 'package:video_player/video_player.dart';
+import 'package:video_player/video_player.dart';
 import 'package:laqoo/modules/danmaku/danmaku_module.dart';
 import 'package:mobx/mobx.dart';
 import 'package:canvas_danmaku/canvas_danmaku.dart';
@@ -163,9 +163,5 @@ abstract class _PlayerController with Store {
       danmakuList.add(element);
       danDanmakus[element.time.toInt()] = danmakuList;
     }
-  }
-}
-
- }
   }
 }

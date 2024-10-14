@@ -1,4 +1,4 @@
-﻿//
+//
 //  Generated file. Do not edit.
 //
 
@@ -37,4 +37,3 @@ void fl_register_plugins(FlPluginRegistry* registry) {
       fl_plugin_registry_get_registrar_for_plugin(registry, "WindowManagerPlugin");
   window_manager_plugin_register_with_registrar(window_manager_registrar);
 }
-

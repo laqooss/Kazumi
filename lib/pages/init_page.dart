@@ -1,4 +1,4 @@
-﻿import 'dart:io';
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:laqoo/pages/my/my_controller.dart';
@@ -251,9 +251,5 @@ class LoadingWidget extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-);
   }
 }

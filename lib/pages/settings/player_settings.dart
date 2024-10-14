@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:laqoo/utils/utils.dart';
 import 'package:laqoo/bean/settings/settings.dart';
 import 'package:laqoo/utils/storage.dart';
@@ -206,6 +206,4 @@ class _PlayerSettingsPageState extends State<PlayerSettingsPage> {
       ),
     );
   }
-}
-
 }

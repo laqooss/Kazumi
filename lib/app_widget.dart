@@ -1,4 +1,4 @@
-﻿import 'dart:io';
+import 'dart:io';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -195,7 +195,4 @@ class _AppWidgetState extends State<AppWidget>
 
     return app;
   }
-}
-
-
 }

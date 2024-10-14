@@ -1,4 +1,4 @@
-﻿import 'dart:io';
+import 'dart:io';
 
 import 'package:logger/logger.dart';
 import 'package:path_provider/path_provider.dart';
@@ -70,7 +70,4 @@ Future<bool> clearLogs() async {
     return false;
   }
   return true;
-}
-
-
 }

@@ -1,4 +1,4 @@
-﻿import 'dart:math';
+import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:laqoo/request/bangumi.dart';
 import 'package:laqoo/modules/bangumi/bangumi_item.dart';
@@ -41,4 +41,3 @@ abstract class _PopularController with Store {
     isLoadingMore = false;
   }
 }
-

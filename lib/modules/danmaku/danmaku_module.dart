@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:laqoo/utils/utils.dart';
 
 class Danmaku {

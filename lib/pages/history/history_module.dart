@@ -1,4 +1,4 @@
-﻿import 'package:laqoo/pages/history/history_page.dart';
+import 'package:laqoo/pages/history/history_page.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class HistoryModule extends Module {
@@ -7,4 +7,3 @@ class HistoryModule extends Module {
     r.child("/", child: (_) => const HistoryPage());
   }
 }
-

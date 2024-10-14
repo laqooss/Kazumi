@@ -1,4 +1,4 @@
-﻿/// This class asks for DateTime to get a string to indicate seasonal anime
+/// This class asks for DateTime to get a string to indicate seasonal anime
 class AnimeSeason {
   late DateTime _date;
   final _seasons = ['冬季', '春季', '夏季', '秋季'];
@@ -51,4 +51,3 @@ class AnimeSeason {
     return '${yas[0]}年${_seasons[yas[1]]}新番';
   }
 }
-

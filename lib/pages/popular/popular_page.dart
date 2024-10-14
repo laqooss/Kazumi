@@ -1,4 +1,4 @@
-﻿import 'dart:async';
+import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -403,7 +403,4 @@ class _PopularPageState extends State<PopularPage>
       ],
     );
   }
-}
-
-}
 }

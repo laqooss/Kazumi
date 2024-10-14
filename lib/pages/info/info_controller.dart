@@ -1,4 +1,4 @@
-﻿import 'package:laqoo/modules/bangumi/bangumi_item.dart';
+import 'package:laqoo/modules/bangumi/bangumi_item.dart';
 import 'package:laqoo/plugins/plugins_controller.dart';
 import 'package:laqoo/pages/video/video_controller.dart';
 import 'package:laqoo/plugins/plugins.dart';
@@ -69,7 +69,4 @@ abstract class _InfoController with Store {
     LaQooLogger().log(
         Level.info, '第一播放列表选集数 ${videoPageController.roadList[0].data.length}');
   }
-}
-
-}
 }

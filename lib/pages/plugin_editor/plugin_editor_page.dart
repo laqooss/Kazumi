@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:laqoo/plugins/plugins.dart';
 import 'package:laqoo/plugins/plugins_controller.dart';
@@ -183,4 +183,3 @@ class _PluginEditorPageState extends State<PluginEditorPage> {
     );
   }
 }
-

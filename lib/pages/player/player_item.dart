@@ -1,4 +1,4 @@
-﻿import 'dart:async';
+import 'dart:async';
 import 'dart:io';
 import 'package:laqoo/utils/logger.dart';
 import 'package:laqoo/utils/remote.dart';
@@ -1469,9 +1469,5 @@ class _PlayerItemState extends State<PlayerItem>
         child: VideoPlayer(
           playerController.mediaPlayer,
         ));
-  }
-}
-
-     ));
   }
 }

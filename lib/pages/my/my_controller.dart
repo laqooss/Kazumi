@@ -1,4 +1,4 @@
-﻿import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
+import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:laqoo/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:laqoo/request/api.dart';
@@ -47,4 +47,3 @@ class MyController {
     return true;
   }
 }
-

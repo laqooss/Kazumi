@@ -1,4 +1,4 @@
-﻿// This file is a part of LaQoo
+// This file is a part of LaQoo
 // (https://github.com/Predidit/LaQoo).
 //
 // Copyright © 2024 Predidit
@@ -19,4 +19,3 @@ class ExternalPlayerUtils {
 };
 
 #endif  // EXTERNAL_PLAYER_UTILS_H_
-

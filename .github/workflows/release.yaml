@@ -1,4 +1,4 @@
-﻿---
+---
     name: "release"
     
     on:
@@ -242,7 +242,7 @@
           - run: flutter pub get
           - run: flutter build macos --release
           - name: Create DMG
-            run: hdiutil create -format UDZO -srcfolder build/macos/Build/Products/Release/laqoo.app -volname laqoo laqoo_macos_${{ env.tag }}.dmg
+            run: hdiutil create -format UDZO -srcfolder build/macos/Build/Products/Release/laqoo.app -volname laqoo LaQoo_macos_${{ env.tag }}.dmg
           - name: Upload MacOS build
             uses: actions/upload-artifact@v4
             with:
@@ -349,4 +349,3 @@
                 LaQoo_ios_*.ipa
                 LaQoo_linux_*.tar.gz
                 LaQoo_linux_*.deb
-

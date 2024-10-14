@@ -1,4 +1,4 @@
-﻿class Weekday {
+class Weekday {
   String? en;
   String? cn;
   String? ja;
@@ -15,6 +15,5 @@
     );
   }
 }
-
 
 

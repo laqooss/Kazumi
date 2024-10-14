@@ -1,4 +1,4 @@
-﻿// GENERATED CODE - DO NOT MODIFY BY HAND
+// GENERATED CODE - DO NOT MODIFY BY HAND
 
 part of 'favorite_controller.dart';
 
@@ -16,4 +16,3 @@ mixin _$FavoriteController on _FavoriteController, Store {
     ''';
   }
 }
-

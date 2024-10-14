@@ -1,4 +1,4 @@
-﻿import 'package:dio/dio.dart';
+import 'package:dio/dio.dart';
 import 'package:laqoo/request/request.dart';
 import 'package:laqoo/request/api.dart';
 import 'package:laqoo/utils/utils.dart';
@@ -72,6 +72,4 @@ class DanmakuRequest {
     }
     return danmakus;
   }
-}
-
 }

@@ -1,4 +1,4 @@
-﻿import 'dart:async';
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:webview_windows/webview_windows.dart';
 import 'package:laqoo/utils/utils.dart';
@@ -255,4 +255,3 @@ class WebviewWindowsItemControllerImpel extends WebviewItemController<WebviewCon
     ''');
   }
 }
-

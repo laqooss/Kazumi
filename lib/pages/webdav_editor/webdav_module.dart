@@ -1,4 +1,4 @@
-﻿import 'package:laqoo/pages/webdav_editor/webdav_editor_page.dart';
+import 'package:laqoo/pages/webdav_editor/webdav_editor_page.dart';
 import 'package:laqoo/pages/webdav_editor/webdav_setting.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
@@ -13,4 +13,3 @@ class WebDavModule extends Module {
         child: (_) => const WebDavEditorPage(),);
   }
 }
-

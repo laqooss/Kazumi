@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:laqoo/pages/info/info_controller.dart';
@@ -76,7 +76,7 @@ class _InfoPageState extends State<InfoPage>
                     ? Colors.white
                     : Colors.black,
                 child: Opacity(
-                  opacity: 1.0,
+                  opacity: 1,
                   child: LayoutBuilder(builder: (context, boxConstraints) {
                     return NetworkImgLayer(
                       src: infoController.bangumiItem.images['large'] ?? '',
@@ -218,7 +218,4 @@ class _InfoPageState extends State<InfoPage>
       ),
     );
   }
-}
-
- }
 }

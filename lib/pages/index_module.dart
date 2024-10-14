@@ -1,4 +1,4 @@
-﻿import 'package:laqoo/pages/index_page.dart';
+import 'package:laqoo/pages/index_page.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:laqoo/pages/router.dart';
 import 'package:laqoo/pages/init_page.dart';
@@ -49,9 +49,5 @@ class IndexModule extends Module {
     }, children: menu.routes, transition: TransitionType.noTransition);
     r.module("/video", module: VideoModule());
     r.module("/info", module: InfoModule());
-  }
-}
-
-);
   }
 }

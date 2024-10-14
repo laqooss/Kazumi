@@ -1,4 +1,4 @@
-﻿import 'package:laqoo/utils/utils.dart';
+import 'package:laqoo/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:laqoo/bean/settings/settings.dart';
 import 'package:provider/provider.dart';
@@ -74,5 +74,3 @@ class _OtherSettingsPageState extends State<OtherSettingsPage> {
     );
   }
 }
-
-

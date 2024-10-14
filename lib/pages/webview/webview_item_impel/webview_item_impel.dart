@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:laqoo/pages/webview/webview_controller.dart';
@@ -53,4 +53,3 @@ class _WebviewItemImpelState extends State<WebviewItemImpel> {
     }
   }
 }
-

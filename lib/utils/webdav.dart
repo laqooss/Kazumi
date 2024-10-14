@@ -1,4 +1,4 @@
-﻿import 'dart:io';
+import 'dart:io';
 import 'package:webdav_client/webdav_client.dart' as webdav;
 import 'package:hive/hive.dart';
 import 'package:path_provider/path_provider.dart';
@@ -102,9 +102,5 @@ class WebDav {
 
   Future ping() async {
     await client.ping();
-  }
-}
-
-);
   }
 }

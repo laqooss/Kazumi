@@ -1,4 +1,4 @@
-﻿import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
+import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:laqoo/modules/bangumi/bangumi_item.dart';
 import 'package:laqoo/utils/storage.dart';
 import 'package:laqoo/utils/webdav.dart';
@@ -54,4 +54,3 @@ abstract class _FavoriteController with Store {
     await WebDav().updateFavorite();
   }
 }
-

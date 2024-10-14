@@ -1,4 +1,4 @@
-﻿import 'dart:io';
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:laqoo/app_module.dart';
 import 'package:laqoo/app_widget.dart';
@@ -57,5 +57,3 @@ void main() async {
     child: const AppWidget(),
   ));
 }
-
-

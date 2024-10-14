@@ -1,4 +1,4 @@
-﻿import 'package:laqoo/modules/bangumi/bangumi_item.dart';
+import 'package:laqoo/modules/bangumi/bangumi_item.dart';
 import 'package:laqoo/modules/history/history_module.dart';
 import 'package:laqoo/utils/storage.dart';
 import 'package:hive/hive.dart';
@@ -79,4 +79,3 @@ abstract class _HistoryController with Store {
     // init();
   }
 }
-

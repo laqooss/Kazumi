@@ -1,4 +1,4 @@
-﻿class SearchItem {
+class SearchItem {
   String name;
   String src;
 
@@ -30,4 +30,3 @@ class PluginSearchResponse {
     );
   }
 }
-

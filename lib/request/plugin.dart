@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:laqoo/request/api.dart';
 import 'package:laqoo/request/request.dart';

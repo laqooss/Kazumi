@@ -1,10 +1,10 @@
-﻿class Api {
+class Api {
   // 当前版本
-  static const String version = '1.0.2';
+  static const String version = '1.0.1';
   // 规则API级别
   static const int apiLevel = 3;
   // 关于LaQoo
-  static const String sourceUrl = "github.com/repos/laqooss/LaQoo";
+  static const String sourceUrl = "https://app.laqoo.eu.org/abort";
   // 更新页面
   static const String iconUrl = "https://app.laqoo.eu.org";
   // 规则仓库
@@ -30,4 +30,3 @@
   static const String dandanSearch = "https://api.dandanplay.net/api/v2/search/anime";
   static const String dandanInfo = "https://api.dandanplay.net/api/v2/bangumi/";
 }
-

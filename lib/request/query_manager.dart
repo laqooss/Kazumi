@@ -1,4 +1,4 @@
-﻿import 'dart:async';
+import 'dart:async';
 import 'package:laqoo/plugins/plugins.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:laqoo/pages/info/info_controller.dart';
@@ -45,4 +45,3 @@ class QueryManager {
     _controller.close();
   }
 }
-

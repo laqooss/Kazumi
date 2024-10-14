@@ -1,4 +1,4 @@
-﻿import 'dart:io';
+import 'dart:io';
 
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:laqoo/pages/video/video_controller.dart';
@@ -45,4 +45,3 @@ class WebviewItemControllerFactory {
     return WebviewItemControllerImpel();
   }
 }
-

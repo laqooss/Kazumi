@@ -1,4 +1,4 @@
-﻿// GENERATED CODE - DO NOT MODIFY BY HAND
+// GENERATED CODE - DO NOT MODIFY BY HAND
 
 part of 'plugins_controller.dart';
 
@@ -49,4 +49,3 @@ pluginHTTPList: ${pluginHTTPList}
     ''';
   }
 }
-

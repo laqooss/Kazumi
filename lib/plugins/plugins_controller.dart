@@ -1,4 +1,4 @@
-﻿import 'dart:io';
+import 'dart:io';
 import 'dart:convert';
 import 'package:mobx/mobx.dart';
 import 'package:flutter/services.dart' show rootBundle;
@@ -146,9 +146,5 @@ Future<void> deletePluginJsonFile(Plugin plugin) async {
       }
     } 
     return pluginStatus;
-  }
-}
-
-
   }
 }

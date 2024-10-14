@@ -1,4 +1,4 @@
-﻿import 'package:canvas_danmaku/canvas_danmaku.dart';
+import 'package:canvas_danmaku/canvas_danmaku.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:laqoo/utils/storage.dart';
@@ -130,4 +130,3 @@ class _DanmakuSettingsWindowState extends State<DanmakuSettingsWindow> {
     );
   }
 }
-

@@ -1,4 +1,4 @@
-﻿import 'dart:async';
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
@@ -609,9 +609,5 @@ class Utils {
       return 'ExoPlayer';
     }
     return 'FFmpeg';
-  }
-}
-
-;
   }
 }

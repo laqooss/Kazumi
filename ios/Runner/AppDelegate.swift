@@ -1,4 +1,4 @@
-﻿import UIKit
+import UIKit
 import Flutter
 
 @UIApplicationMain

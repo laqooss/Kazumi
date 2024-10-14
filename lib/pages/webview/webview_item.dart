@@ -1,4 +1,4 @@
-﻿import 'dart:io';
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:laqoo/pages/webview/webview_item_impel/webview_item_impel.dart';
 import 'package:laqoo/pages/webview/webview_item_impel/webview_windows_item_impel.dart';
@@ -29,5 +29,4 @@ Widget get webviewUniversal {
   }
   return const WebviewItemImpel();
 }
-
 

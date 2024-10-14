@@ -1,4 +1,4 @@
-﻿---
+---
     name: "PR workflow"
 
     on:
@@ -223,4 +223,3 @@
               path: |
                 LaQoo_linux_*.tar.gz
                 LaQoo_linux_*.deb
-

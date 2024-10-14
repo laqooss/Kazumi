@@ -1,4 +1,4 @@
-﻿import 'dart:io';
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:laqoo/pages/my/my_controller.dart';
@@ -226,5 +226,3 @@ class _AboutPageState extends State<AboutPage> {
     );
   }
 }
-
-

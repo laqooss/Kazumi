@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:hive/hive.dart';
 import 'package:laqoo/utils/storage.dart';
@@ -90,4 +90,3 @@ class _WebDavEditorPageState extends State<WebDavEditorPage> {
     );
   }
 }
-

@@ -1,4 +1,4 @@
-﻿import 'dart:convert';
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -253,7 +253,4 @@ class _PluginViewPageState extends State<PluginViewPage> {
       ),
     );
   }
-}
-
-}
 }

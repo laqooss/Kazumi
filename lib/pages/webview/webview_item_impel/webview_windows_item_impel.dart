@@ -1,4 +1,4 @@
-﻿import 'dart:async';
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:webview_windows/webview_windows.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -73,4 +73,3 @@ class _WebviewWindowsItemImpelState extends State<WebviewWindowsItemImpel> {
     return compositeView;
   }
 }
-

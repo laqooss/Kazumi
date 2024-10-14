@@ -1,4 +1,4 @@
-﻿import 'package:laqoo/pages/popular/popular_page.dart';
+import 'package:laqoo/pages/popular/popular_page.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class PopularModule extends Module {
@@ -7,4 +7,3 @@ class PopularModule extends Module {
     r.child("/", child: (_) => const PopularPage());
   }
 }
-

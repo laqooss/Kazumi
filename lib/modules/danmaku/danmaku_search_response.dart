@@ -1,4 +1,4 @@
-﻿class DanmakuAnime {
+class DanmakuAnime {
   int animeId;
   String animeTitle;
   String type;

@@ -1,4 +1,4 @@
-﻿// GENERATED CODE - DO NOT MODIFY BY HAND
+// GENERATED CODE - DO NOT MODIFY BY HAND
 
 part of 'history_controller.dart';
 
@@ -32,4 +32,3 @@ histories: ${histories}
     ''';
   }
 }
-

@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:laqoo/pages/history/history_controller.dart';
 import 'package:laqoo/plugins/plugins.dart';
 import 'package:laqoo/utils/constans.dart';
@@ -180,8 +180,5 @@ class _BangumiHistoryCardVState extends State<BangumiHistoryCardV> {
         ),
       ),
     );
-  }
-}
-
   }
 }

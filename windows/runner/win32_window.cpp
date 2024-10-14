@@ -1,4 +1,4 @@
-﻿#include "win32_window.h"
+#include "win32_window.h"
 
 #include <dwmapi.h>
 #include <flutter_windows.h>
@@ -286,4 +286,3 @@ void Win32Window::UpdateTheme(HWND const window) {
                           &enable_dark_mode, sizeof(enable_dark_mode));
   }
 }
-

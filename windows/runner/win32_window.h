@@ -1,4 +1,4 @@
-﻿#ifndef RUNNER_WIN32_WINDOW_H_
+#ifndef RUNNER_WIN32_WINDOW_H_
 #define RUNNER_WIN32_WINDOW_H_
 
 #include <windows.h>
@@ -100,4 +100,3 @@ class Win32Window {
 };
 
 #endif  // RUNNER_WIN32_WINDOW_H_
-

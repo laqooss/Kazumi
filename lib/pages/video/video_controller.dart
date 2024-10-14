@@ -1,4 +1,4 @@
-﻿import 'package:laqoo/modules/roads/road_module.dart';
+import 'package:laqoo/modules/roads/road_module.dart';
 import 'package:laqoo/plugins/plugins_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:laqoo/plugins/plugins.dart';
@@ -74,7 +74,4 @@ abstract class _VideoPageController with Store {
     await webviewItemController.loadUrl(urlItem, offset: offset);
   }
 }
-
-
-
 

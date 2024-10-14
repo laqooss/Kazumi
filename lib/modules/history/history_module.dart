@@ -1,4 +1,4 @@
-﻿import 'package:hive/hive.dart';
+import 'package:hive/hive.dart';
 import 'package:laqoo/modules/bangumi/bangumi_item.dart';
 
 part 'history_module.g.dart';
@@ -58,4 +58,3 @@ class Progress {
     return 'Episode ${episode.toString()}, progress $progress';
   }
 }
-

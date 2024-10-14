@@ -1,4 +1,4 @@
-﻿import 'package:laqoo/pages/settings/danmaku/danmaku_settings.dart';
+import 'package:laqoo/pages/settings/danmaku/danmaku_settings.dart';
 import 'package:laqoo/pages/settings/danmaku/danmaku_source_settings.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
@@ -12,4 +12,3 @@ class DanmakuModule extends Module {
     r.child("/source", child: (_) => const DanmakuSourceSettingsPage());
   }
 }
-

@@ -1,4 +1,4 @@
-﻿import 'dart:async';
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:laqoo/pages/webview/webview_controller.dart';
 import 'package:laqoo/utils/utils.dart';
@@ -255,4 +255,3 @@ class WebviewLinuxItemControllerImpel extends WebviewItemController<Webview> {
     ''');
   }
 }
-

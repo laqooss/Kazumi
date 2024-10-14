@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:laqoo/request/api.dart';
 import 'package:laqoo/pages/about/about_page.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -23,4 +23,3 @@ class AboutModule extends Module {
         transition: TransitionType.noTransition);
   }
 }
-

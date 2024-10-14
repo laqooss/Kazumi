@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:laqoo/request/api.dart';
 
 class StyleString {
@@ -94,4 +94,3 @@ const List<double> danAreaList = [
   0.75,
   1.0,
 ];
-

@@ -1,4 +1,4 @@
-﻿import 'package:laqoo/utils/utils.dart';
+import 'package:laqoo/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:laqoo/bean/settings/settings.dart';
@@ -341,7 +341,4 @@ class _DanmakuSettingsPageState extends State<DanmakuSettingsPage> {
       ),
     );
   }
-}
-
-
 }

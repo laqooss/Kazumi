@@ -1,4 +1,4 @@
-﻿import 'dart:async';
+import 'dart:async';
 import 'dart:io';
 
 import 'package:dlna_dart/dlna.dart';
@@ -173,4 +173,3 @@ class RemotePlay {
     }
   }
 }
-

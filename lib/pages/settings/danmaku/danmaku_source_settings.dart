@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:laqoo/bean/settings/settings.dart';
 import 'package:laqoo/utils/storage.dart';
 import 'package:hive/hive.dart';
@@ -50,4 +50,3 @@ class _DanmakuSourceSettingsPageState extends State<DanmakuSourceSettingsPage> {
     );
   }
 }
-

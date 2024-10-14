@@ -1,4 +1,4 @@
-﻿import 'package:laqoo/modules/bangumi/bangumi_item.dart';
+import 'package:laqoo/modules/bangumi/bangumi_item.dart';
 import 'package:laqoo/request/bangumi.dart';
 import 'package:laqoo/utils/anime_season.dart';
 import 'package:mobx/mobx.dart';

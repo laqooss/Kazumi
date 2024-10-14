@@ -1,4 +1,4 @@
-﻿import 'package:laqoo/utils/utils.dart';
+import 'package:laqoo/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:laqoo/pages/menu/menu.dart';
 import 'package:laqoo/pages/menu/side_menu.dart';
@@ -19,4 +19,3 @@ class _IndexPageState extends State<IndexPage> with  WidgetsBindingObserver {
     return (!Utils.isCompact()) ? const SideMenu() : const BottomMenu();
   }
 }
-
