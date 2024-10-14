@@ -138,21 +138,19 @@ class _AboutPageState extends State<AboutPage> {
         body: Column(
           children: [
             ListTile(
-              onTap: () {
-                launchUrl(Uri.parse(Api.sourceUrl),
-                    mode: LaunchMode.externalApplication);
-              },
-              dense: false,
-              title: const Text('关于LaQoo'),
-              trailing: Text('Abort',
+              title: const Text('关于此应用'),
+              subtitle: Text('查看LaQoo个性化来源',
                   style: Theme.of(context)
                       .textTheme
                       .labelMedium!
                       .copyWith(color: Theme.of(context).colorScheme.outline)),
+              onTap: () {
+                Modular.to.pushNamed('/tab/my/about/license');
+              },
             ),
             ListTile(
               onTap: () {
-                launchUrl(Uri.parse(Api.iconUrl),
+                launchUrl(Uri.parse(Api.sourceUrl),
                     mode: LaunchMode.externalApplication);
               },
               dense: false,
