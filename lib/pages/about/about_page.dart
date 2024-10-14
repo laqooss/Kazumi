@@ -139,7 +139,7 @@ class _AboutPageState extends State<AboutPage> {
           children: [
             ListTile(
               title: const Text('关于此应用'),
-              subtitle: Text('查看LaQoo个性化来源',
+              subtitle: Text('查看个性化来源',
                   style: Theme.of(context)
                       .textTheme
                       .labelMedium!

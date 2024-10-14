@@ -3,8 +3,8 @@ class Api {
   static const String version = '1.0.2';
   // 规则API级别
   static const int apiLevel = 3;
-  // 关于LaQoo
-  static const String sourceUrl = "https://github.com/laqooss/Kazumi";
+  // 关于LaQooLaQoo
+  static const String sourceUrl = "https://github.com/laqooss/LaQoo";
   // 更新页面
   static const String iconUrl = "https://app.laqoo.eu.org";
   // 规则仓库
