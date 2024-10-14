@@ -74,18 +74,6 @@ class _InfoPageState extends State<InfoPage>
                 color: Theme.of(context).brightness == Brightness.light
                     ? Colors.white
                     : Colors.black,
-                child: Opacity(
-                  opacity: 1,
-                  child: LayoutBuilder(builder: (context, boxConstraints) {
-                    return NetworkImgLayer(
-                      src: infoController.bangumiItem.images['large'] ?? '',
-                      width: boxConstraints.maxWidth,
-                      height: boxConstraints.maxHeight,
-                      fadeInDuration: const Duration(milliseconds: 0),
-                      fadeOutDuration: const Duration(milliseconds: 0),
-                    );
-                  }),
-                ),
               ),
             ),
           ),
