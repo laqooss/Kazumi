@@ -62,60 +62,82 @@ class _InfoPageState extends State<InfoPage>
       LaQooLogger().log(Level.error, e.toString());
     }
   }
-
   @override
   Widget build(BuildContext context) {
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      navigationBarState.hideNavigate();
-    });
-    debugPrint('status 数组长度为 ${infoController.pluginSearchStatus.length}');
     return PopScope(
       canPop: true,
-      onPopInvoked: (bool didPop) {
-        onBackPressed(context);
-      },
-      child: SafeArea(
-        child: Scaffold(
-          appBar: const SysAppBar(),
-          body: Column(
-            children: [
-              BangumiInfoCardV(bangumiItem: infoController.bangumiItem),
-              TabBar(
-                isScrollable: true,
-                tabAlignment: TabAlignment.center,
-                controller: tabController,
-                tabs: pluginsController.pluginList
-                    .map((plugin) => Observer(
-                          builder: (context) => Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Text(
-                                plugin.name,
-                                overflow: TextOverflow.ellipsis,
-                              ),
-                              const SizedBox(width: 5.0),
-                              Container(
-                                width: 8.0,
-                                height: 8.0,
-                                decoration: BoxDecoration(
-                                  color: infoController.pluginSearchStatus[
-                                              plugin.name] ==
-                                          'success'
-                                      ? Colors.green
-                                      : (infoController.pluginSearchStatus[
-                                                  plugin.name] ==
-                                              'pending')
-                                          ? Colors.grey
-                                          : Colors.red,
-                                  // color: Colors.green,
-                                  shape: BoxShape.circle,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ))
-                    .toList(),
+      child: Stack(
+        children: [
+          Positioned.fill(
+            child: IgnorePointer(
+              child: Container(
+                color: Theme.of(context).brightness == Brightness.light
+                    ? Colors.white
+                    : Colors.black,
+                child: Opacity(
+                  opacity: 0,
+                  child: LayoutBuilder(builder: (context, boxConstraints) {
+                    return NetworkImgLayer(
+                      src: infoController.bangumiItem.images['large'] ?? '',
+                      width: boxConstraints.maxWidth,
+                      height: boxConstraints.maxHeight,
+                      fadeInDuration: const Duration(milliseconds: 0),
+                      fadeOutDuration: const Duration(milliseconds: 0),
+                    );
+                  }),
+                ),
               ),
+            ),
+          ),
+          Scaffold(
+              backgroundColor: Colors.transparent,
+              appBar: const SysAppBar(backgroundColor: Colors.transparent),
+              body: Column(
+                children: [
+                  BangumiInfoCardV(bangumiItem: infoController.bangumiItem),
+                  TabBar(
+                    isScrollable: true,
+                    tabAlignment: TabAlignment.center,
+                    controller: tabController,
+                    tabs: pluginsController.pluginList
+                        .map((plugin) => Observer(
+                              builder: (context) => Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Text(
+                                    plugin.name,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: TextStyle(
+                                        fontSize: Theme.of(context)
+                                            .textTheme
+                                            .titleMedium!
+                                            .fontSize,
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .onSurface),
+                                  ),
+                                  const SizedBox(width: 5.0),
+                                  Container(
+                                    width: 8.0,
+                                    height: 8.0,
+                                    decoration: BoxDecoration(
+                                      color: infoController.pluginSearchStatus[
+                                                  plugin.name] ==
+                                              'success'
+                                          ? Colors.red
+                                          : (infoController.pluginSearchStatus[
+                                                      plugin.name] ==
+                                                  'pending')
+                                              ? Colors.grey
+                                              : Colors.red,
+                                      shape: BoxShape.circle,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ))
+                        .toList(),
+                  ),
                   Expanded(
                     child: Observer(
                       builder: (context) => TabBarView(
