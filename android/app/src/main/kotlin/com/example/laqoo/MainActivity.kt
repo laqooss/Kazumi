@@ -1,4 +1,4 @@
-package com.example.kazumi
+package com.example.laqoo
 
 import android.content.Intent
 import android.os.Build;

@@ -138,7 +138,7 @@
           - run: flutter pub get
           - run: flutter build macos --release
           - name: Create DMG
-            run: hdiutil create -format UDZO -srcfolder build/macos/Build/Products/Release/kazumi.app -volname kazumi LaQoo_macos_canary.dmg
+            run: hdiutil create -format UDZO -srcfolder build/macos/Build/Products/Release/laqoo.app -volname laqoo LaQoo_macos_canary.dmg
           - name: Upload MacOS build
             uses: actions/upload-artifact@v4
             with:
