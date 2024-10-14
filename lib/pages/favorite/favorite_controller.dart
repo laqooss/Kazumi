@@ -1,11 +1,11 @@
-import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
-import 'package:kazumi/utils/storage.dart';
-import 'package:kazumi/utils/webdav.dart';
+﻿import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
+import 'package:laqoo/modules/bangumi/bangumi_item.dart';
+import 'package:laqoo/utils/storage.dart';
+import 'package:laqoo/utils/webdav.dart';
 import 'package:hive/hive.dart';
 import 'package:mobx/mobx.dart';
 import 'package:logger/logger.dart';
-import 'package:kazumi/utils/logger.dart';
+import 'package:laqoo/utils/logger.dart';
 
 part 'favorite_controller.g.dart';
 
@@ -50,7 +50,8 @@ abstract class _FavoriteController with Store {
   }
 
   Future updateFavorite() async{
-    KazumiLogger().log(Level.debug, '提交到WebDav的追番列表长度 ${GStorage.favorites.length}');
+    LaQooLogger().log(Level.debug, '提交到WebDav的追番列表长度 ${GStorage.favorites.length}');
     await WebDav().updateFavorite();
   }
 }
+

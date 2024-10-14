@@ -1,4 +1,4 @@
-import 'dart:io';
+﻿import 'dart:io';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -6,13 +6,13 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter_displaymode/flutter_displaymode.dart';
 import 'package:hive/hive.dart';
-import 'package:kazumi/utils/utils.dart';
-import 'package:kazumi/utils/storage.dart';
+import 'package:laqoo/utils/utils.dart';
+import 'package:laqoo/utils/storage.dart';
 import 'package:tray_manager/tray_manager.dart';
 import 'package:logger/logger.dart';
-import 'package:kazumi/utils/logger.dart';
+import 'package:laqoo/utils/logger.dart';
 import 'package:window_manager/window_manager.dart';
-import 'package:kazumi/utils/webdav.dart';
+import 'package:laqoo/utils/webdav.dart';
 
 class AppWidget extends StatefulWidget {
   const AppWidget({super.key});
@@ -76,7 +76,7 @@ class _AppWidgetState extends State<AppWidget>
           var webDav = WebDav();
           webDav.updateHistory();
         } catch (e) {
-          KazumiLogger().log(Level.error, '同步记录失败 ${e.toString()}');
+          LaQooLogger().log(Level.error, '同步记录失败 ${e.toString()}');
         }
       }
     } else if (state == AppLifecycleState.resumed) {
@@ -88,7 +88,7 @@ class _AppWidgetState extends State<AppWidget>
           var webDav = WebDav();
           webDav.downloadHistory();
         } catch (e) {
-          KazumiLogger().log(Level.error, '同步观看记录失败 ${e.toString()}');
+          LaQooLogger().log(Level.error, '同步观看记录失败 ${e.toString()}');
         }
       }
     } else if (state == AppLifecycleState.inactive) {
@@ -101,7 +101,7 @@ class _AppWidgetState extends State<AppWidget>
             var webDav = WebDav();
             webDav.updateHistory();
           } catch (e) {
-            KazumiLogger().log(Level.error, '同步记录失败 ${e.toString()}');
+            LaQooLogger().log(Level.error, '同步记录失败 ${e.toString()}');
           }
         }
       }
@@ -189,10 +189,13 @@ class _AppWidgetState extends State<AppWidget>
           FlutterDisplayMode.setPreferredMode(preferred);
         });
       } catch (e) {
-        KazumiLogger().log(Level.error, '高帧率设置失败 ${e.toString()}');
+        LaQooLogger().log(Level.error, '高帧率设置失败 ${e.toString()}');
       }
     }
 
     return app;
   }
+}
+
+
 }

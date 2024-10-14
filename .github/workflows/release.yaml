@@ -1,4 +1,4 @@
----
+﻿---
     name: "release"
     
     on:
@@ -349,3 +349,4 @@
                 LaQoo_ios_*.ipa
                 LaQoo_linux_*.tar.gz
                 LaQoo_linux_*.deb
+

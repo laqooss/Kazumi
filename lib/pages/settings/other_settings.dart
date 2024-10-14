@@ -1,12 +1,12 @@
-import 'package:kazumi/utils/utils.dart';
+﻿import 'package:laqoo/utils/utils.dart';
 import 'package:flutter/material.dart';
-import 'package:kazumi/bean/settings/settings.dart';
+import 'package:laqoo/bean/settings/settings.dart';
 import 'package:provider/provider.dart';
-import 'package:kazumi/pages/menu/menu.dart';
-import 'package:kazumi/pages/menu/side_menu.dart';
-import 'package:kazumi/utils/storage.dart';
+import 'package:laqoo/pages/menu/menu.dart';
+import 'package:laqoo/pages/menu/side_menu.dart';
+import 'package:laqoo/utils/storage.dart';
 import 'package:hive/hive.dart';
-import 'package:kazumi/bean/appbar/sys_app_bar.dart';
+import 'package:laqoo/bean/appbar/sys_app_bar.dart';
 
 class OtherSettingsPage extends StatefulWidget {
   const OtherSettingsPage({super.key});
@@ -74,3 +74,5 @@ class _OtherSettingsPageState extends State<OtherSettingsPage> {
     );
   }
 }
+
+

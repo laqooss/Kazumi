@@ -1,16 +1,16 @@
-import 'package:kazumi/utils/utils.dart';
+﻿import 'package:laqoo/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/bean/settings/settings.dart';
+import 'package:laqoo/bean/settings/settings.dart';
 import 'package:provider/provider.dart';
-import 'package:kazumi/pages/menu/menu.dart';
-import 'package:kazumi/pages/menu/side_menu.dart';
-import 'package:kazumi/utils/storage.dart';
+import 'package:laqoo/pages/menu/menu.dart';
+import 'package:laqoo/pages/menu/side_menu.dart';
+import 'package:laqoo/utils/storage.dart';
 import 'package:hive/hive.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
-import 'package:kazumi/pages/popular/popular_controller.dart';
-import 'package:kazumi/bean/appbar/sys_app_bar.dart';
-import 'package:kazumi/utils/constans.dart';
+import 'package:laqoo/pages/popular/popular_controller.dart';
+import 'package:laqoo/bean/appbar/sys_app_bar.dart';
+import 'package:laqoo/utils/constans.dart';
 
 class DanmakuSettingsPage extends StatefulWidget {
   const DanmakuSettingsPage({super.key});
@@ -341,4 +341,7 @@ class _DanmakuSettingsPageState extends State<DanmakuSettingsPage> {
       ),
     );
   }
+}
+
+
 }

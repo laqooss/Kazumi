@@ -1,5 +1,5 @@
-import 'package:hive/hive.dart';
-import 'package:kazumi/utils/utils.dart';
+﻿import 'package:hive/hive.dart';
+import 'package:laqoo/utils/utils.dart';
 
 part 'bangumi_item.g.dart';
 
@@ -64,3 +64,4 @@ class BangumiItem {
     );
   }
 }
+

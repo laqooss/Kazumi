@@ -1,13 +1,13 @@
-import 'dart:io';
+﻿import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/pages/my/my_controller.dart';
-import 'package:kazumi/request/api.dart';
-import 'package:kazumi/utils/utils.dart';
+import 'package:laqoo/pages/my/my_controller.dart';
+import 'package:laqoo/request/api.dart';
+import 'package:laqoo/utils/utils.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:kazumi/bean/appbar/sys_app_bar.dart';
-import 'package:kazumi/pages/menu/menu.dart';
-import 'package:kazumi/pages/menu/side_menu.dart';
+import 'package:laqoo/bean/appbar/sys_app_bar.dart';
+import 'package:laqoo/pages/menu/menu.dart';
+import 'package:laqoo/pages/menu/side_menu.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:provider/provider.dart';
@@ -226,3 +226,5 @@ class _AboutPageState extends State<AboutPage> {
     );
   }
 }
+
+

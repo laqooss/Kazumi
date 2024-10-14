@@ -1,21 +1,21 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/bean/appbar/sys_app_bar.dart';
-import 'package:kazumi/pages/info/info_controller.dart';
-import 'package:kazumi/pages/player/player_controller.dart';
-import 'package:kazumi/pages/video/video_controller.dart';
-import 'package:kazumi/pages/webview/webview_item.dart';
-import 'package:kazumi/pages/history/history_controller.dart';
+import 'package:laqoo/bean/appbar/sys_app_bar.dart';
+import 'package:laqoo/pages/info/info_controller.dart';
+import 'package:laqoo/pages/player/player_controller.dart';
+import 'package:laqoo/pages/video/video_controller.dart';
+import 'package:laqoo/pages/webview/webview_item.dart';
+import 'package:laqoo/pages/history/history_controller.dart';
 import 'package:logger/logger.dart';
-import 'package:kazumi/utils/logger.dart';
-import 'package:kazumi/pages/player/player_item.dart';
+import 'package:laqoo/utils/logger.dart';
+import 'package:laqoo/pages/player/player_item.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:hive/hive.dart';
-import 'package:kazumi/utils/storage.dart';
-import 'package:kazumi/utils/utils.dart';
+import 'package:laqoo/utils/storage.dart';
+import 'package:laqoo/utils/utils.dart';
 import 'package:flutter/services.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
-import 'package:kazumi/bean/appbar/drag_to_move_bar.dart' as dtb;
+import 'package:laqoo/bean/appbar/drag_to_move_bar.dart' as dtb;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 
 class VideoPage extends StatefulWidget {
@@ -397,7 +397,7 @@ class _VideoPageState extends State<VideoPage>
                       videoPageController.currentRoad == currentRoad) {
                     return;
                   }
-                  KazumiLogger().log(Level.info, '视频链接为 $urlItem');
+                  LaQooLogger().log(Level.info, '视频链接为 $urlItem');
                   videoPageController.currentRoad = currentRoad;
                   videoPageController.changeEpisode(count0,
                       currentRoad: videoPageController.currentRoad);
@@ -465,5 +465,9 @@ class _VideoPageState extends State<VideoPage>
         ),
       ),
     );
+  }
+}
+
+
   }
 }

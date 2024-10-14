@@ -1,4 +1,4 @@
-import 'package:html/parser.dart' show parse;
+﻿import 'package:html/parser.dart' show parse;
 import 'package:flutter/material.dart' show debugPrint;
 import 'dart:core';
 
@@ -71,3 +71,4 @@ class ParserWithoutWebview {
     return mp4Urls[0];
   }
 }
+

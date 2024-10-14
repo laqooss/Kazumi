@@ -1,4 +1,4 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+﻿// GENERATED CODE - DO NOT MODIFY BY HAND
 
 part of 'bangumi_item.dart';
 
@@ -63,3 +63,4 @@ class BangumiItemAdapter extends TypeAdapter<BangumiItem> {
           runtimeType == other.runtimeType &&
           typeId == other.typeId;
 }
+

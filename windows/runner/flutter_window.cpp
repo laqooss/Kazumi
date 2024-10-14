@@ -1,4 +1,4 @@
-#include "flutter_window.h"
+﻿#include "flutter_window.h"
 #include "fullscreen_utils.h"
 #include "external_player_utils.h"
 
@@ -112,3 +112,4 @@ void FlutterWindow::RegisterIntentChannel() {
     }
   });
 }
+

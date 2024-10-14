@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 
 final List<Map<String, dynamic>> colorThemeTypes = [
   {'color': Colors.red, 'label': '默认'},
@@ -20,3 +20,4 @@ final List<Map<String, dynamic>> colorThemeTypes = [
   {'color': Colors.brown, 'label': '棕色'},
   {'color': Colors.grey, 'label': '灰色'},
 ];
+

@@ -1,19 +1,19 @@
-import 'dart:async';
+﻿import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/pages/popular/popular_controller.dart';
-import 'package:kazumi/utils/utils.dart';
-import 'package:kazumi/utils/constans.dart';
-import 'package:kazumi/pages/error/http_error.dart';
+import 'package:laqoo/pages/popular/popular_controller.dart';
+import 'package:laqoo/utils/utils.dart';
+import 'package:laqoo/utils/constans.dart';
+import 'package:laqoo/pages/error/http_error.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:kazumi/bean/card/bangumi_card.dart';
+import 'package:laqoo/bean/card/bangumi_card.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:flutter/services.dart';
 import 'package:window_manager/window_manager.dart';
-import 'package:kazumi/bean/appbar/sys_app_bar.dart';
+import 'package:laqoo/bean/appbar/sys_app_bar.dart';
 import 'package:logger/logger.dart';
-import 'package:kazumi/utils/logger.dart';
+import 'package:laqoo/utils/logger.dart';
 
 class PopularPage extends StatefulWidget {
   const PopularPage({super.key});
@@ -47,13 +47,13 @@ class _PopularPageState extends State<PopularPage>
               scrollController.position.maxScrollExtent - 200 &&
           popularController.isLoadingMore == false &&
           popularController.searchKeyword == '') {
-        KazumiLogger().log(Level.info, 'Popular 正在加载更多');
+        LaQooLogger().log(Level.info, 'Popular 正在加载更多');
         popularController.queryBangumiListFeed(
             type: 'onload', tag: popularController.currentTag);
       }
     });
     if (popularController.bangumiList.isEmpty) {
-      // KazumiLogger().log(Level.info, 'Popular缓存列表为空, 尝试重加载');
+      // LaQooLogger().log(Level.info, 'Popular缓存列表为空, 尝试重加载');
       Timer(const Duration(seconds: 3), () {
         timeout = true;
       });
@@ -403,4 +403,7 @@ class _PopularPageState extends State<PopularPage>
       ],
     );
   }
+}
+
+}
 }

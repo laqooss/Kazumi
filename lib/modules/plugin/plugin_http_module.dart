@@ -1,4 +1,4 @@
-class PluginHTTPItem {
+﻿class PluginHTTPItem {
   String name;
   String version;
   bool useNativePlayer;

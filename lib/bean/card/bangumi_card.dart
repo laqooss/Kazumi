@@ -1,11 +1,11 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/utils/constans.dart';
-import 'package:kazumi/utils/utils.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
-import 'package:kazumi/bean/card/network_img_layer.dart';
-import 'package:kazumi/pages/info/info_controller.dart';
-import 'package:kazumi/pages/popular/popular_controller.dart';
+import 'package:laqoo/utils/constans.dart';
+import 'package:laqoo/utils/utils.dart';
+import 'package:laqoo/modules/bangumi/bangumi_item.dart';
+import 'package:laqoo/bean/card/network_img_layer.dart';
+import 'package:laqoo/pages/info/info_controller.dart';
+import 'package:laqoo/pages/popular/popular_controller.dart';
 
 // 视频卡片 - 垂直布局
 class BangumiCardV extends StatelessWidget {
@@ -114,3 +114,5 @@ class BangumiContent extends StatelessWidget {
     );
   }
 }
+
+

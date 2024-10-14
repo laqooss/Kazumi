@@ -1,14 +1,14 @@
-import 'package:kazumi/pages/settings/danmaku/danmaku_module.dart';
-import 'package:kazumi/pages/my/my_page.dart';
-import 'package:kazumi/pages/about/about_module.dart';
-import 'package:kazumi/pages/plugin_editor/plugin_module.dart';
+﻿import 'package:laqoo/pages/settings/danmaku/danmaku_module.dart';
+import 'package:laqoo/pages/my/my_page.dart';
+import 'package:laqoo/pages/about/about_module.dart';
+import 'package:laqoo/pages/plugin_editor/plugin_module.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/pages/history/history_module.dart';
-import 'package:kazumi/pages/settings/theme_settings_page.dart';
-import 'package:kazumi/pages/settings/player_settings.dart';
-import 'package:kazumi/pages/settings/displaymode_settings.dart';
-import 'package:kazumi/pages/settings/other_settings.dart';
-import 'package:kazumi/pages/webdav_editor/webdav_module.dart';
+import 'package:laqoo/pages/history/history_module.dart';
+import 'package:laqoo/pages/settings/theme_settings_page.dart';
+import 'package:laqoo/pages/settings/player_settings.dart';
+import 'package:laqoo/pages/settings/displaymode_settings.dart';
+import 'package:laqoo/pages/settings/other_settings.dart';
+import 'package:laqoo/pages/webdav_editor/webdav_module.dart';
 
 class MyModule extends Module {
   @override
@@ -26,4 +26,7 @@ class MyModule extends Module {
     r.module("/history", module: HistoryModule(), transition: TransitionType.noTransition);
     r.module("/danmaku", module: DanmakuModule(), transition: TransitionType.noTransition);
   }
+}
+
+ }
 }

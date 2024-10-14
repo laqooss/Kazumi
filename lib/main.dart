@@ -1,16 +1,16 @@
-import 'dart:io';
+﻿import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:kazumi/app_module.dart';
-import 'package:kazumi/app_widget.dart';
+import 'package:laqoo/app_module.dart';
+import 'package:laqoo/app_widget.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:kazumi/utils/storage.dart';
+import 'package:laqoo/utils/storage.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:kazumi/request/request.dart';
+import 'package:laqoo/request/request.dart';
 import 'package:flutter/services.dart';
-import 'package:kazumi/utils/utils.dart';
+import 'package:laqoo/utils/utils.dart';
 import 'package:window_manager/window_manager.dart';
-import 'package:kazumi/pages/error/storage_error_page.dart';
+import 'package:laqoo/pages/error/storage_error_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -57,3 +57,5 @@ void main() async {
     child: const AppWidget(),
   ));
 }
+
+

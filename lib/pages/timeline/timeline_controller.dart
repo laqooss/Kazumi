@@ -1,6 +1,6 @@
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
-import 'package:kazumi/request/bangumi.dart';
-import 'package:kazumi/utils/anime_season.dart';
+﻿import 'package:laqoo/modules/bangumi/bangumi_item.dart';
+import 'package:laqoo/request/bangumi.dart';
+import 'package:laqoo/utils/anime_season.dart';
 import 'package:mobx/mobx.dart';
 
 part 'timeline_controller.g.dart';

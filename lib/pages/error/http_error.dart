@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 
 class HttpError extends StatelessWidget {
   const HttpError(
@@ -44,3 +44,4 @@ class HttpError extends StatelessWidget {
     );
   }
 }
+

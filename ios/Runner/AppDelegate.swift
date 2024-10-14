@@ -1,4 +1,4 @@
-import UIKit
+﻿import UIKit
 import Flutter
 
 @UIApplicationMain
@@ -8,7 +8,7 @@ import Flutter
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         // let controller : FlutterViewController = window?.rootViewController as! FlutterViewController
-        // let channel = FlutterMethodChannel(name: "com.predidit.kazumi/intent",
+        // let channel = FlutterMethodChannel(name: "com.predidit.laqoo/intent",
         //                                    binaryMessenger: controller.binaryMessenger)
         // channel.setMethodCallHandler({
         //     (call: FlutterMethodCall, result: @escaping FlutterResult) -> Void in

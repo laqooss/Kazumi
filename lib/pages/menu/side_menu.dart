@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/pages/router.dart';
+import 'package:laqoo/pages/router.dart';
 import 'package:provider/provider.dart';
 
 class SideMenu extends StatefulWidget {
@@ -119,3 +119,4 @@ class _SideMenu extends State<SideMenu> {
     );
   }
 }
+

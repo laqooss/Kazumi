@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/pages/webview/webview_controller.dart';
+import 'package:laqoo/pages/webview/webview_controller.dart';
 
 class WebviewLinuxItemImpel extends StatefulWidget {
   const WebviewLinuxItemImpel({super.key});
@@ -33,3 +33,4 @@ class _WebviewLinuxItemImpelState extends State<WebviewLinuxItemImpel> {
         child: const Center(child: Text('此平台不支持Webview规则')));
   }
 }
+

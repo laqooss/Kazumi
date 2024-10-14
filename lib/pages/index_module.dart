@@ -1,18 +1,18 @@
-import 'package:kazumi/pages/index_page.dart';
+﻿import 'package:laqoo/pages/index_page.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/pages/router.dart';
-import 'package:kazumi/pages/init_page.dart';
+import 'package:laqoo/pages/router.dart';
+import 'package:laqoo/pages/init_page.dart';
 import 'package:flutter/material.dart';
-import 'package:kazumi/pages/popular/popular_controller.dart';
-import 'package:kazumi/pages/info/info_controller.dart';
-import 'package:kazumi/plugins/plugins_controller.dart';
-import 'package:kazumi/pages/video/video_controller.dart';
-import 'package:kazumi/pages/timeline/timeline_controller.dart';
-import 'package:kazumi/pages/favorite/favorite_controller.dart';
-import 'package:kazumi/pages/my/my_controller.dart';
-import 'package:kazumi/pages/history/history_controller.dart';
-import 'package:kazumi/pages/video/video_module.dart';
-import 'package:kazumi/pages/info/info_module.dart';
+import 'package:laqoo/pages/popular/popular_controller.dart';
+import 'package:laqoo/pages/info/info_controller.dart';
+import 'package:laqoo/plugins/plugins_controller.dart';
+import 'package:laqoo/pages/video/video_controller.dart';
+import 'package:laqoo/pages/timeline/timeline_controller.dart';
+import 'package:laqoo/pages/favorite/favorite_controller.dart';
+import 'package:laqoo/pages/my/my_controller.dart';
+import 'package:laqoo/pages/history/history_controller.dart';
+import 'package:laqoo/pages/video/video_module.dart';
+import 'package:laqoo/pages/info/info_module.dart';
 
 class IndexModule extends Module {
   @override
@@ -38,7 +38,7 @@ class IndexModule extends Module {
           ChildRoute(
             "/error",
             child: (_) => Scaffold(
-              appBar: AppBar (title: const Text("Kazumi")),
+              appBar: AppBar (title: const Text("LaQoo")),
               body: const Center(child: Text("初始化失败")),
             ),
           ),
@@ -49,5 +49,9 @@ class IndexModule extends Module {
     }, children: menu.routes, transition: TransitionType.noTransition);
     r.module("/video", module: VideoModule());
     r.module("/info", module: InfoModule());
+  }
+}
+
+);
   }
 }

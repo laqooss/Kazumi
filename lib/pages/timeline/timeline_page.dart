@@ -1,16 +1,16 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/pages/menu/menu.dart';
-import 'package:kazumi/pages/menu/side_menu.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
-import 'package:kazumi/pages/timeline/timeline_controller.dart';
-import 'package:kazumi/bean/card/bangumi_card.dart';
-import 'package:kazumi/utils/utils.dart';
-import 'package:kazumi/utils/constans.dart';
+import 'package:laqoo/pages/menu/menu.dart';
+import 'package:laqoo/pages/menu/side_menu.dart';
+import 'package:laqoo/modules/bangumi/bangumi_item.dart';
+import 'package:laqoo/pages/timeline/timeline_controller.dart';
+import 'package:laqoo/bean/card/bangumi_card.dart';
+import 'package:laqoo/utils/utils.dart';
+import 'package:laqoo/utils/constans.dart';
 import 'package:provider/provider.dart';
-import 'package:kazumi/bean/appbar/sys_app_bar.dart';
-import 'package:kazumi/utils/anime_season.dart';
+import 'package:laqoo/bean/appbar/sys_app_bar.dart';
+import 'package:laqoo/utils/anime_season.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 
 class TimelinePage extends StatefulWidget {
@@ -263,4 +263,7 @@ class _TimelinePageState extends State<TimelinePage>
     }
     return gridViewList;
   }
+}
+
+}
 }

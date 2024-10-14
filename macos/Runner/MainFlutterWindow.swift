@@ -1,4 +1,4 @@
-import Cocoa
+﻿import Cocoa
 import FlutterMacOS
 
 class MainFlutterWindow: NSWindow {
@@ -13,3 +13,4 @@ class MainFlutterWindow: NSWindow {
     super.awakeFromNib()
   }
 }
+

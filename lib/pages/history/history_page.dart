@@ -1,15 +1,15 @@
-import 'package:kazumi/utils/utils.dart';
+﻿import 'package:laqoo/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/pages/history/history_controller.dart';
-import 'package:kazumi/pages/menu/menu.dart';
-import 'package:kazumi/pages/menu/side_menu.dart';
+import 'package:laqoo/pages/history/history_controller.dart';
+import 'package:laqoo/pages/menu/menu.dart';
+import 'package:laqoo/pages/menu/side_menu.dart';
 import 'package:provider/provider.dart';
-import 'package:kazumi/bean/card/bangumi_history_card.dart';
-import 'package:kazumi/utils/constans.dart';
+import 'package:laqoo/bean/card/bangumi_history_card.dart';
+import 'package:laqoo/utils/constans.dart';
 
-import 'package:kazumi/bean/appbar/sys_app_bar.dart';
+import 'package:laqoo/bean/appbar/sys_app_bar.dart';
 
 class HistoryPage extends StatefulWidget {
   const HistoryPage({super.key});
@@ -127,4 +127,6 @@ class _HistoryPageState extends State<HistoryPage>
   //     },
   //   );
   // }
+}
+
 }

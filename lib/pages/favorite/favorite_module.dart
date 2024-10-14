@@ -1,4 +1,4 @@
-import 'package:kazumi/pages/favorite/favorite_page.dart';
+﻿import 'package:laqoo/pages/favorite/favorite_page.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class FavoriteModule extends Module {
@@ -7,3 +7,4 @@ class FavoriteModule extends Module {
     r.child("/", child: (_) => const FavoritePage());
   }
 }
+

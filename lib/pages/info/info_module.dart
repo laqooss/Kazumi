@@ -1,4 +1,4 @@
-import 'package:kazumi/pages/info/info_page.dart';
+﻿import 'package:laqoo/pages/info/info_page.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class InfoModule extends Module {
@@ -7,3 +7,4 @@ class InfoModule extends Module {
     r.child("/", child: (_) => const InfoPage());
   }
 }
+

@@ -1,15 +1,15 @@
-import 'package:video_player/video_player.dart';
-import 'package:kazumi/modules/danmaku/danmaku_module.dart';
+﻿import 'package:video_player/video_player.dart';
+import 'package:laqoo/modules/danmaku/danmaku_module.dart';
 import 'package:mobx/mobx.dart';
 import 'package:canvas_danmaku/canvas_danmaku.dart';
-import 'package:kazumi/request/damaku.dart';
-import 'package:kazumi/pages/video/video_controller.dart';
+import 'package:laqoo/request/damaku.dart';
+import 'package:laqoo/pages/video/video_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:hive/hive.dart';
-import 'package:kazumi/utils/storage.dart';
+import 'package:laqoo/utils/storage.dart';
 import 'package:logger/logger.dart';
-import 'package:kazumi/utils/logger.dart';
-import 'package:kazumi/utils/utils.dart';
+import 'package:laqoo/utils/logger.dart';
+import 'package:laqoo/utils/utils.dart';
 
 part 'player_controller.g.dart';
 
@@ -71,7 +71,7 @@ abstract class _PlayerController with Store {
     try {
       mediaPlayer.dispose();
     } catch (_) {}
-    KazumiLogger().log(Level.info, 'VideoItem开始初始化');
+    LaQooLogger().log(Level.info, 'VideoItem开始初始化');
     getDanDanmaku(
         videoPageController.title, videoPageController.currentEspisode);
     mediaPlayer = await createVideoController();
@@ -84,7 +84,7 @@ abstract class _PlayerController with Store {
       await mediaPlayer.play();
     }
     setPlaybackSpeed(playerSpeed);
-    KazumiLogger().log(Level.info, 'VideoURL初始化完成');
+    LaQooLogger().log(Level.info, 'VideoURL初始化完成');
     // 加载弹幕
     loading = false;
   }
@@ -96,9 +96,9 @@ abstract class _PlayerController with Store {
     } else {
       userAgent = videoPageController.currentPlugin.userAgent;
     }
-    KazumiLogger().log(Level.info, 'media_kit UA: $userAgent');
+    LaQooLogger().log(Level.info, 'media_kit UA: $userAgent');
     String referer = videoPageController.currentPlugin.referer;
-    KazumiLogger().log(Level.info, 'media_kit Referer: $referer');
+    LaQooLogger().log(Level.info, 'media_kit Referer: $referer');
     var httpHeaders = {
       'user-agent': userAgent,
       if (referer.isNotEmpty) 'referer': referer,
@@ -106,7 +106,7 @@ abstract class _PlayerController with Store {
     mediaPlayer = VideoPlayerController.networkUrl(Uri.parse(videoUrl),
         httpHeaders: httpHeaders);
     await mediaPlayer.initialize();
-    KazumiLogger().log(Level.info, 'videoController 配置成功 $videoUrl');
+    LaQooLogger().log(Level.info, 'videoController 配置成功 $videoUrl');
     return mediaPlayer;
   }
 
@@ -115,7 +115,7 @@ abstract class _PlayerController with Store {
     try {
       mediaPlayer.setPlaybackSpeed(playerSpeed);
     } catch (e) {
-      KazumiLogger().log(Level.error, '设置播放速度失败 ${e.toString()}');
+      LaQooLogger().log(Level.error, '设置播放速度失败 ${e.toString()}');
     }
   }
 
@@ -145,14 +145,14 @@ abstract class _PlayerController with Store {
   }
 
   Future getDanDanmaku(String title, int episode) async {
-    KazumiLogger().log(Level.info, '尝试获取弹幕 $title');
+    LaQooLogger().log(Level.info, '尝试获取弹幕 $title');
     try {
       danDanmakus.clear();
       bangumiID = await DanmakuRequest.getBangumiID(title);
       var res = await DanmakuRequest.getDanDanmaku(bangumiID, episode);
       addDanmakus(res);
     } catch (e) {
-      KazumiLogger().log(Level.warning, '获取弹幕错误 ${e.toString()}');
+      LaQooLogger().log(Level.warning, '获取弹幕错误 ${e.toString()}');
     }
   }
 
@@ -163,5 +163,9 @@ abstract class _PlayerController with Store {
       danmakuList.add(element);
       danDanmakus[element.time.toInt()] = danmakuList;
     }
+  }
+}
+
+ }
   }
 }

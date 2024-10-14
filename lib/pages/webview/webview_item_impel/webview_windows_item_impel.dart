@@ -1,10 +1,10 @@
-import 'dart:async';
+﻿import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:webview_windows/webview_windows.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:window_manager/window_manager.dart';
-import 'package:kazumi/pages/video/video_controller.dart';
-import 'package:kazumi/pages/webview/webview_controller.dart';
+import 'package:laqoo/pages/video/video_controller.dart';
+import 'package:laqoo/pages/webview/webview_controller.dart';
 
 class WebviewWindowsItemImpel extends StatefulWidget {
   const WebviewWindowsItemImpel({super.key});
@@ -73,3 +73,4 @@ class _WebviewWindowsItemImpelState extends State<WebviewWindowsItemImpel> {
     return compositeView;
   }
 }
+

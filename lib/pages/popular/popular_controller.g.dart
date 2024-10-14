@@ -1,4 +1,4 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+﻿// GENERATED CODE - DO NOT MODIFY BY HAND
 
 part of 'popular_controller.dart';
 
@@ -32,3 +32,4 @@ bangumiList: ${bangumiList}
     ''';
   }
 }
+

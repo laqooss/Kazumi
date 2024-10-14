@@ -1,20 +1,20 @@
-import 'dart:async';
+﻿import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
 import 'package:dio/dio.dart';
 import 'package:crypto/crypto.dart';
 import 'package:hive/hive.dart';
-import 'package:kazumi/utils/storage.dart';
+import 'package:laqoo/utils/storage.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:kazumi/request/api.dart';
+import 'package:laqoo/request/api.dart';
 import 'package:screen_pixel/screen_pixel.dart';
-import 'package:kazumi/utils/constans.dart';
+import 'package:laqoo/utils/constans.dart';
 import 'package:logger/logger.dart';
 import 'package:device_info_plus/device_info_plus.dart';
-import 'package:kazumi/utils/logger.dart';
+import 'package:laqoo/utils/logger.dart';
 import 'package:flutter/foundation.dart';
 import 'package:window_manager/window_manager.dart';
 
@@ -370,16 +370,16 @@ class Utils {
     return '${hours.toString().padLeft(2, '0')}:${minutes.toString().padLeft(2, '0')}:${secs.floor().toString().padLeft(2, '0')}';
   }
 
-  static String jsonToKazumiBase64(String jsonStr) {
+  static String jsonToLaQooBase64(String jsonStr) {
     String base64Str = base64Encode(utf8.encode(jsonStr));
-    return 'kazumi://$base64Str';
+    return 'laqoo://$base64Str';
   }
 
-  static String kazumiBase64ToJson(String kazumiBase64Str) {
-    if (!kazumiBase64Str.startsWith('kazumi://')) {
+  static String laqooBase64ToJson(String laqooBase64Str) {
+    if (!laqooBase64Str.startsWith('laqoo://')) {
       return '';
     }
-    String base64Str = kazumiBase64Str.substring(9);
+    String base64Str = laqooBase64Str.substring(9);
     String jsonStr = utf8.decode(base64.decode(base64Str));
     return jsonStr;
   }
@@ -561,7 +561,7 @@ class Utils {
         }
       }
     } catch (exception, stacktrace) {
-      KazumiLogger()
+      LaQooLogger()
           .log(Level.error, exception.toString(), stackTrace: stacktrace);
     }
   }
@@ -581,7 +581,7 @@ class Utils {
         );
       }
     } catch (exception, stacktrace) {
-      KazumiLogger()
+      LaQooLogger()
           .log(Level.error, exception.toString(), stackTrace: stacktrace);
     }
   }
@@ -609,5 +609,9 @@ class Utils {
       return 'ExoPlayer';
     }
     return 'FFmpeg';
+  }
+}
+
+;
   }
 }

@@ -1,4 +1,4 @@
-package com.example.laqoo
+﻿package com.example.laqoo
 
 import android.content.Intent
 import android.os.Build;
@@ -48,3 +48,4 @@ class MainActivity: FlutterActivity() {
         }
     }
 }
+

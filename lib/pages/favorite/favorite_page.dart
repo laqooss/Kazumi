@@ -1,12 +1,12 @@
-import 'package:kazumi/utils/utils.dart';
+﻿import 'package:laqoo/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/utils/constans.dart';
-import 'package:kazumi/pages/menu/menu.dart';
-import 'package:kazumi/pages/menu/side_menu.dart';
-import 'package:kazumi/bean/card/bangumi_card.dart';
-import 'package:kazumi/pages/favorite/favorite_controller.dart';
-import 'package:kazumi/bean/appbar/sys_app_bar.dart';
+import 'package:laqoo/utils/constans.dart';
+import 'package:laqoo/pages/menu/menu.dart';
+import 'package:laqoo/pages/menu/side_menu.dart';
+import 'package:laqoo/bean/card/bangumi_card.dart';
+import 'package:laqoo/pages/favorite/favorite_controller.dart';
+import 'package:laqoo/bean/appbar/sys_app_bar.dart';
 import 'package:provider/provider.dart';
 
 class FavoritePage extends StatefulWidget {
@@ -92,4 +92,6 @@ class _FavoritePageState extends State<FavoritePage> {
       ),
     );
   }
+}
+
 }

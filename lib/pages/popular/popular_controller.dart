@@ -1,7 +1,7 @@
-import 'dart:math';
+﻿import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:kazumi/request/bangumi.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
+import 'package:laqoo/request/bangumi.dart';
+import 'package:laqoo/modules/bangumi/bangumi_item.dart';
 import 'package:mobx/mobx.dart';
 
 part 'popular_controller.g.dart';
@@ -41,3 +41,4 @@ abstract class _PopularController with Store {
     isLoadingMore = false;
   }
 }
+

@@ -1,7 +1,7 @@
-import 'dart:async';
+﻿import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:kazumi/utils/utils.dart';
-import 'package:kazumi/pages/webview/webview_controller.dart';
+import 'package:laqoo/utils/utils.dart';
+import 'package:laqoo/pages/webview/webview_controller.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class WebviewItemControllerImpel extends WebviewItemController<WebViewController> {
@@ -299,3 +299,4 @@ class WebviewItemControllerImpel extends WebviewItemController<WebViewController
     ''');
   }
 }
+

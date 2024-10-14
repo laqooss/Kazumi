@@ -1,10 +1,10 @@
-import 'package:dio/dio.dart';
-import 'package:kazumi/modules/search/plugin_search_module.dart';
-import 'package:kazumi/modules/roads/road_module.dart';
-import 'package:kazumi/request/request.dart';
+﻿import 'package:dio/dio.dart';
+import 'package:laqoo/modules/search/plugin_search_module.dart';
+import 'package:laqoo/modules/roads/road_module.dart';
+import 'package:laqoo/request/request.dart';
 import 'package:html/parser.dart';
 import 'package:logger/logger.dart';
-import 'package:kazumi/utils/logger.dart';
+import 'package:laqoo/utils/logger.dart';
 import 'package:xpath_selector_html_parser/xpath_selector_html_parser.dart';
 
 class Plugin {
@@ -153,7 +153,7 @@ class Plugin {
           src: element.queryXPath(searchResult).node!.attributes['href'] ?? '',
         );
         searchItems.add(searchItem);
-        KazumiLogger().log(Level.info,
+        LaQooLogger().log(Level.info,
             '$name ${element.queryXPath(searchName).node!.text ?? ''} $baseUrl${element.queryXPath(searchResult).node!.attributes['href'] ?? ''}');
       } catch (_) {}
     });
@@ -201,3 +201,4 @@ class Plugin {
     return roadList;
   }
 }
+

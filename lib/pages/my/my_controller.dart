@@ -1,10 +1,10 @@
-import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
-import 'package:kazumi/utils/utils.dart';
+﻿import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
+import 'package:laqoo/utils/utils.dart';
 import 'package:flutter/material.dart';
-import 'package:kazumi/request/api.dart';
+import 'package:laqoo/request/api.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:logger/logger.dart';
-import 'package:kazumi/utils/logger.dart';
+import 'package:laqoo/utils/logger.dart';
 
 class MyController {
   Future<bool> checkUpdata({String type = 'manual'}) async {
@@ -39,7 +39,7 @@ class MyController {
         );
       }
     }).catchError((err) {
-      KazumiLogger().log(Level.error, '检查更新失败 ${err.toString()}');
+      LaQooLogger().log(Level.error, '检查更新失败 ${err.toString()}');
       if (type == 'manual') {
         SmartDialog.showToast('当前是最新版本！');
       }
@@ -47,3 +47,4 @@ class MyController {
     return true;
   }
 }
+

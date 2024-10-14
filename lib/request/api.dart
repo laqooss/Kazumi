@@ -1,17 +1,17 @@
-class Api {
+﻿class Api {
   // 当前版本
   static const String version = '1.0.2';
   // 规则API级别
   static const int apiLevel = 3;
   // 关于LaQoo
-  static const String sourceUrl = "github.com/repos/laqooss/Kazumi";
+  static const String sourceUrl = "github.com/repos/laqooss/LaQoo";
   // 更新页面
   static const String iconUrl = "https://app.laqoo.eu.org";
   // 规则仓库
-  static const String pluginShop = 'https://raw.githubusercontent.com/Predidit/KazumiRules/main/';
+  static const String pluginShop = 'https://raw.githubusercontent.com/Predidit/LaQooRules/main/';
   // 在线升级
   static const String latestApp =
-      'https://api.github.com/repos/laqooss/Kazumi/releases/latest'; 
+      'https://api.github.com/repos/laqooss/LaQoo/releases/latest'; 
   // Github镜像
   static const String gitMirror = 'https://mirror.ghproxy.com/';
   // 每日放送
@@ -30,3 +30,4 @@ class Api {
   static const String dandanSearch = "https://api.dandanplay.net/api/v2/search/anime";
   static const String dandanInfo = "https://api.dandanplay.net/api/v2/bangumi/";
 }
+

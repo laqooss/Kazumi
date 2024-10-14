@@ -1,11 +1,11 @@
-import 'package:dio/dio.dart';
-import 'package:kazumi/request/request.dart';
-import 'package:kazumi/request/api.dart';
-import 'package:kazumi/utils/utils.dart';
+﻿import 'package:dio/dio.dart';
+import 'package:laqoo/request/request.dart';
+import 'package:laqoo/request/api.dart';
+import 'package:laqoo/utils/utils.dart';
 import 'package:logger/logger.dart';
-import 'package:kazumi/utils/logger.dart';
-import 'package:kazumi/modules/danmaku/danmaku_module.dart';
-import 'package:kazumi/modules/danmaku/danmaku_search_response.dart';
+import 'package:laqoo/utils/logger.dart';
+import 'package:laqoo/modules/danmaku/danmaku_module.dart';
+import 'package:laqoo/modules/danmaku/danmaku_search_response.dart';
 
 
 class DanmakuRequest {
@@ -56,7 +56,7 @@ class DanmakuRequest {
       'withRelated': 'true',
     };
     // 这里猜测了弹弹Play的分集命名规则，例如上面的番剧ID为1758，第一集弹幕库ID大概率为17580001，但是此命名规则并没有体现在官方API文档里，保险的做法是请求 Api.dandanInfo
-    KazumiLogger().log(Level.info,
+    LaQooLogger().log(Level.info,
         "弹幕请求最终URL ${"${Api.dandanAPI}$bangumiID${episode.toString().padLeft(4, '0')}"}");
     final res = await Request().get(
         ("${Api.dandanAPI}$bangumiID${episode.toString().padLeft(4, '0')}"),
@@ -72,4 +72,6 @@ class DanmakuRequest {
     }
     return danmakus;
   }
+}
+
 }

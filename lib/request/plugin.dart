@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'dart:convert';
-import 'package:kazumi/request/api.dart';
-import 'package:kazumi/request/request.dart';
-import 'package:kazumi/plugins/plugins.dart';
-import 'package:kazumi/modules/plugin/plugin_http_module.dart';
+import 'package:laqoo/request/api.dart';
+import 'package:laqoo/request/request.dart';
+import 'package:laqoo/plugins/plugins.dart';
+import 'package:laqoo/modules/plugin/plugin_http_module.dart';
 
 class PluginHTTP {
   static Future getPluginList() async {

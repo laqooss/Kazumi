@@ -1,5 +1,5 @@
-// This file is a part of Kazumi
-// (https://github.com/Predidit/Kazumi).
+﻿// This file is a part of LaQoo
+// (https://github.com/Predidit/LaQoo).
 //
 // Copyright © 2024 Predidit
 // All rights reserved.
@@ -19,3 +19,4 @@ class ExternalPlayerUtils {
 };
 
 #endif  // EXTERNAL_PLAYER_UTILS_H_
+

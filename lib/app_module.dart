@@ -1,5 +1,5 @@
-import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/pages/index_module.dart';
+﻿import 'package:flutter_modular/flutter_modular.dart';
+import 'package:laqoo/pages/index_module.dart';
 
 class AppModule extends Module {
   @override

@@ -1,4 +1,4 @@
-import 'package:kazumi/utils/utils.dart';
+﻿import 'package:laqoo/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:window_manager/window_manager.dart';
 
@@ -37,3 +37,4 @@ class DragToMoveArea extends StatelessWidget {
     );
   }
 }
+

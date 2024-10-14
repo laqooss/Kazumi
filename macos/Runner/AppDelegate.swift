@@ -1,4 +1,4 @@
-import Cocoa
+﻿import Cocoa
 import FlutterMacOS
 
 @NSApplicationMain
@@ -7,3 +7,4 @@ class AppDelegate: FlutterAppDelegate {
     return true
   }
 }
+

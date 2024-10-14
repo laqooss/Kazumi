@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:hive/hive.dart';
-import 'package:kazumi/utils/storage.dart';
+import 'package:laqoo/utils/storage.dart';
 
 class SetSwitchItem extends StatefulWidget {
   final String? title;
@@ -141,4 +141,5 @@ class _SelectDialogState<T> extends State<SelectDialog<T>> {
     );
   }
 }
+
 

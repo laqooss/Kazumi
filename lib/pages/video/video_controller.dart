@@ -1,12 +1,12 @@
-import 'package:kazumi/modules/roads/road_module.dart';
-import 'package:kazumi/plugins/plugins_controller.dart';
+﻿import 'package:laqoo/modules/roads/road_module.dart';
+import 'package:laqoo/plugins/plugins_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/plugins/plugins.dart';
-import 'package:kazumi/pages/webview/webview_controller.dart';
-import 'package:kazumi/pages/history/history_controller.dart';
+import 'package:laqoo/plugins/plugins.dart';
+import 'package:laqoo/pages/webview/webview_controller.dart';
+import 'package:laqoo/pages/history/history_controller.dart';
 import 'package:mobx/mobx.dart';
 import 'package:logger/logger.dart';
-import 'package:kazumi/utils/logger.dart';
+import 'package:laqoo/utils/logger.dart';
 
 part 'video_controller.g.dart';
 
@@ -59,7 +59,7 @@ abstract class _VideoPageController with Store {
     currentEspisode = episode;
     this.currentRoad = currentRoad;
     logLines.clear();
-    KazumiLogger().log(Level.info, '跳转到第$episode话');
+    LaQooLogger().log(Level.info, '跳转到第$episode话');
     String urlItem = roadList[currentRoad].data[episode - 1];
     if (urlItem.contains(currentPlugin.baseUrl) ||
         urlItem.contains(currentPlugin.baseUrl.replaceAll('https', 'http'))) {
@@ -74,4 +74,7 @@ abstract class _VideoPageController with Store {
     await webviewItemController.loadUrl(urlItem, offset: offset);
   }
 }
+
+
+
 

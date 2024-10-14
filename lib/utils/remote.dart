@@ -1,4 +1,4 @@
-import 'dart:async';
+﻿import 'dart:async';
 import 'dart:io';
 
 import 'package:dlna_dart/dlna.dart';
@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:logger/logger.dart';
-import 'package:kazumi/utils/logger.dart';
+import 'package:laqoo/utils/logger.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 import '../pages/player/player_controller.dart';
@@ -105,7 +105,7 @@ class RemotePlay {
                                     DLNADevice(value.info).setUrl(video);
                                     DLNADevice(value.info).play();
                                   } catch (e) {
-                                    KazumiLogger()
+                                    LaQooLogger()
                                         .log(Level.error, 'DLNA Error: $e');
                                     SmartDialog.showNotify(
                                         msg:
@@ -167,9 +167,10 @@ class RemotePlay {
           'openWithMime', <String, String>{'url': url, 'mimeType': mimeType});
       return true;
     } on PlatformException catch (e) {
-      KazumiLogger()
+      LaQooLogger()
           .log(Level.error, "Failed to open with mime: '${e.message}'.");
       return false;
     }
   }
 }
+

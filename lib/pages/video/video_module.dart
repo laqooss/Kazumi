@@ -1,7 +1,7 @@
-import 'package:kazumi/pages/video/video_page.dart';
+﻿import 'package:laqoo/pages/video/video_page.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/pages/webview/webview_controller.dart';
-import 'package:kazumi/pages/player/player_controller.dart';
+import 'package:laqoo/pages/webview/webview_controller.dart';
+import 'package:laqoo/pages/player/player_controller.dart';
 
 class VideoModule extends Module {
   @override
@@ -15,3 +15,4 @@ class VideoModule extends Module {
     i.addSingleton(WebviewItemControllerFactory.getController);
   }
 }
+

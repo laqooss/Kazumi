@@ -1,10 +1,10 @@
-import 'package:logger/logger.dart';
-import 'package:kazumi/utils/logger.dart';
-import 'package:kazumi/utils/constans.dart';
+﻿import 'package:logger/logger.dart';
+import 'package:laqoo/utils/logger.dart';
+import 'package:laqoo/utils/constans.dart';
 import 'package:dio/dio.dart';
-import 'package:kazumi/request/api.dart';
-import 'package:kazumi/request/request.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
+import 'package:laqoo/request/api.dart';
+import 'package:laqoo/request/request.dart';
+import 'package:laqoo/modules/bangumi/bangumi_item.dart';
 
 class BangumiHTTP {
   // why the api havn't been replaced by getCalendarBySearch?
@@ -15,7 +15,7 @@ class BangumiHTTP {
       var res = await Request().get(Api.bangumiCalendar,
           options: Options(headers: bangumiHTTPHeader));
       final jsonData = res.data;
-      KazumiLogger()
+      LaQooLogger()
           .log(Level.info, 'The length of clendar is ${jsonData.length}');
       for (dynamic jsonDayList in jsonData) {
         List<BangumiItem> bangumiList = [];
@@ -31,7 +31,7 @@ class BangumiHTTP {
         bangumiCalendar.add(bangumiList);
       }
     } catch (e) {
-      KazumiLogger()
+      LaQooLogger()
           .log(Level.error, 'Resolve calendar failed ${e.toString()}');
     }
     return bangumiCalendar;
@@ -66,7 +66,7 @@ class BangumiHTTP {
         }
       }
     } catch (e) {
-      KazumiLogger()
+      LaQooLogger()
           .log(Level.error, 'Resolve bangumi list failed ${e.toString()}');
     }
     try {
@@ -80,7 +80,7 @@ class BangumiHTTP {
         bangumiCalendar.add(bangumiDayList);
       }
     } catch (e) {
-      KazumiLogger().log(
+      LaQooLogger().log(
           Level.error, 'Fetch bangumi item to calendar failed ${e.toString()}');
     }
     return bangumiCalendar;
@@ -125,7 +125,7 @@ class BangumiHTTP {
         }
       }
     } catch (e) {
-      KazumiLogger()
+      LaQooLogger()
           .log(Level.error, 'Resolve bangumi list failed ${e.toString()}');
     }
     return bangumiList;
@@ -160,13 +160,13 @@ class BangumiHTTP {
               bangumiList.add(bangumiItem);
             }
           } catch (e) {
-            KazumiLogger().log(
+            LaQooLogger().log(
                 Level.error, 'Resolve search results failed ${e.toString()}');
           }
         }
       }
     } catch (e) {
-      KazumiLogger().log(Level.error, 'Unknown search problem ${e.toString()}');
+      LaQooLogger().log(Level.error, 'Unknown search problem ${e.toString()}');
     }
     return bangumiList;
   }
@@ -177,9 +177,13 @@ class BangumiHTTP {
           options: Options(headers: bangumiHTTPHeader));
       return res.data['summary'];
     } catch (e) {
-      KazumiLogger()
+      LaQooLogger()
           .log(Level.error, 'Resolve bangumi summary failed ${e.toString()}');
       return '';
     }
+  }
+}
+
+}
   }
 }

@@ -1,4 +1,4 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+﻿// GENERATED CODE - DO NOT MODIFY BY HAND
 
 part of 'history_module.dart';
 
@@ -93,3 +93,4 @@ class ProgressAdapter extends TypeAdapter<Progress> {
           runtimeType == other.runtimeType &&
           typeId == other.typeId;
 }
+
