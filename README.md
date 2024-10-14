@@ -19,7 +19,7 @@
   <img src="static/svg/get_it_on_github.svg" alt="Get it on Github" width="200"/>
 </a>
 
-本软件由[Predidit/LaQoo](https://github.com/Predidit/Kazumi)部分优化而来，但仅供个人学习、研究或非商业用途。禁止将本软件用于任何商业目的, 包括但不限于出售、出租、许可或以其他形式从中获利。
+本软件由[Predidit/LaQoo](https://github.com/Predidit/Kazumi)删减部分而来，但仅供个人学习、研究或非商业用途。禁止将本软件用于任何商业目的, 包括但不限于出售、出租、许可或以其他形式从中获利。
 
 
 
